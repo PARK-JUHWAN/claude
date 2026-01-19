@@ -1,0 +1,102 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on SPECIAL EQUIPMENT for different hospital floors/departments.
+
+=== EMERGENCY ROOM (2F) - CPR ===
+- Crash cart
+- Defibrillator (AED)
+- Defibrillator paddles
+- CPR board
+- Ambu bag (BVM)
+- Oxygen tank
+- Intubation tray
+- Emergency drug box
+- Code blue button
+- Resuscitation bed
+
+=== EMERGENCY ROOM (2F) - DRUNK PATIENT ===
+- Restraint belt
+- Bed rail (padded)
+- Emesis basin (vomit)
+- IV stand with fluids
+- Security call button
+- Calm down sign
+- Privacy curtain
+- Observation chair
+
+=== ICU (5F) - MONITORING ===
+- Multi-monitor station
+- Ventilator machine
+- Infusion pump rack
+- Arterial line monitor
+- Central line cart
+- Alarm panel
+- Patient turning pillow
+- Pressure relief mattress
+- Position change timer
+- ICU bed (special)
+
+=== PSYCHIATRIC WARD (7F) ===
+- Soft restraint
+- Padded wall panel
+- Safety mirror (unbreakable)
+- Medication window
+- Observation window
+- Locked medicine cabinet
+- Hidden pill detector
+- Calm room mat
+- Stress ball
+- Art therapy supplies
+
+=== PEDIATRIC WARD (8F) ===
+- Child-safe bed rail
+- Play mat (colorful)
+- Toy basket
+- Child IV pole (decorated)
+- Cartoon wall panel
+- Kid-size wheelchair
+- Stuffed animal (comfort)
+- Bubble machine
+- Sticker reward board
+- Child locator tag
+
+=== REHABILITATION (9F) ===
+- Parallel bars
+- Walking frame
+- Physical therapy mat
+- Exercise ball
+- Balance board
+- Hand grip trainer
+- Leg weight
+- Arm sling
+- Fall alarm sensor
+- Non-slip floor mat
+- Grab bar (wall)
+- Transfer belt
+
+=== MATERNITY (10F) ===
+- Complaint box
+- Patient satisfaction board
+- VIP service bell
+- Comfort pillow set
+- Room service menu
+- Premium bed (fancy)
+- Feedback tablet
+- Concierge desk
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.

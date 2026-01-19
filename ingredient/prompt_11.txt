@@ -1,0 +1,89 @@
+Create a pixel art TILESET sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Reference games: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley.
+
+Style: Cute pixel art. Transparent background PNG. Label each tile.
+
+This sheet is for TILEMAP TILES - floor and wall pieces that connect together to build rooms.
+
+=== HOSPITAL FLOOR (White/Gray) ===
+- Floor tile (plain white)
+- Floor tile (plain gray)
+- Floor tile (white with grid lines)
+- Floor tile (gray speckled)
+- Floor tile edge (top)
+- Floor tile edge (bottom)
+- Floor tile edge (left)
+- Floor tile edge (right)
+- Floor tile corner (4 types)
+
+=== COLORED FLOORS BY DEPARTMENT ===
+- OR floor (green)
+- ER floor (red accent)
+- ICU floor (blue accent)
+- Pediatric floor (pink)
+- Hallway floor (beige)
+- Lobby floor (polished brown)
+- Bathroom floor (blue tile)
+
+=== WALL TILES (Top-down view) ===
+- Wall horizontal
+- Wall vertical
+- Wall corner top-left
+- Wall corner top-right
+- Wall corner bottom-left
+- Wall corner bottom-right
+- Wall T-junction up
+- Wall T-junction down
+- Wall T-junction left
+- Wall T-junction right
+- Wall cross junction
+- Wall end cap (4 directions)
+
+=== WALL WITH FLOOR TRANSITION ===
+- Wall-floor edge (top)
+- Wall-floor edge (bottom)
+- Wall-floor edge (left)
+- Wall-floor edge (right)
+- Wall-floor inner corner (4 types)
+- Wall-floor outer corner (4 types)
+
+=== DOOR TILES ===
+- Door frame horizontal
+- Door frame vertical
+- Door (closed) horizontal
+- Door (closed) vertical
+- Door (open) horizontal
+- Door (open) vertical
+- Double door frame
+- Automatic door frame
+
+=== SPECIAL FLOOR TILES ===
+- Floor with drain
+- Floor with vent
+- Floor mat (entrance)
+- Anti-fatigue mat
+- Wet floor area
+- Carpet square
+- Rubber flooring
+
+=== FLOOR MARKINGS (overlay tiles) ===
+- Arrow (up)
+- Arrow (down)
+- Arrow (left)
+- Arrow (right)
+- Line stripe (yellow)
+- Line stripe (red)
+- Wheelchair symbol
+- No entry symbol
+
+REMINDER: These are TILEMAP pieces meant to connect together. Keep consistent edges so tiles can seamlessly join.
+
+Every tile must be drawn from ABOVE (bird's eye view). Arrange in neat rows by category. Label each tile. Transparent background.

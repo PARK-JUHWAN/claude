@@ -1,0 +1,104 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on GENERAL WARD, VIP WARD, and EXAMINATION CENTER furniture.
+
+=== GENERAL WARD BEDS (6F) ===
+- Hospital bed (standard)
+- Hospital bed with patient
+- Hospital bed with blanket
+- Bedside cabinet
+- Overbed table
+- Patient chair
+- Privacy curtain (closed)
+- Privacy curtain (open)
+- Bed rail (up)
+- Bed rail (down)
+
+=== GENERAL WARD EQUIPMENT ===
+- Vital signs monitor
+- IV pole with bag
+- Oxygen outlet (wall)
+- Suction outlet (wall)
+- Nurse call button
+- Patient whiteboard
+- Meal tray table
+- Water pitcher set
+- Tissue box
+- Personal belongings box
+
+=== VIP WARD (11F) - LUXURY ===
+- VIP bed (fancy, large)
+- VIP bed with patient
+- Luxury sofa
+- Leather armchair
+- Premium bedside table
+- Mini refrigerator
+- Flat screen TV
+- Room service cart
+- Flower vase (elegant)
+- Champagne bucket
+
+=== VIP WARD AMENITIES ===
+- Private bathroom door
+- Luxury bathrobe hook
+- Premium toiletry set
+- Room fragrance diffuser
+- Art painting (wall)
+- Designer lamp
+- Wine glass set
+- Fruit basket
+- Welcome gift box
+- Concierge phone
+
+=== EXAMINATION CENTER (3F) ===
+- Exam table
+- Exam table with patient
+- Doctor stool (rolling)
+- Exam light (adjustable)
+- Otoscope (wall mount)
+- Ophthalmoscope (wall mount)
+- Blood pressure device (wall)
+- Scale (standing)
+- Height measure (wall)
+- Vision chart (wall)
+
+=== EXAMINATION SUPPLIES ===
+- Tongue depressor jar
+- Cotton ball jar
+- Glove box dispenser
+- Specimen cup rack
+- Sharps container (small)
+- Hand sanitizer (wall)
+- Paper towel dispenser
+- Exam paper roll
+- Reflex hammer
+- Tuning fork
+
+=== NURSE STATION ===
+- Nurse desk (large)
+- Computer workstation
+- Chart rack
+- Medication cart
+- Phone (desk)
+- Intercom system
+- Staff schedule board
+- Key cabinet
+- CCTV monitor
+- Emergency alarm panel
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.

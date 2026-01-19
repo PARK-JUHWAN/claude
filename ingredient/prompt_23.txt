@@ -1,0 +1,94 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on MORGUE / MORTUARY (B1 Floor - Hidden Stage). Spooky but still cute pixel art style!
+
+=== MORGUE STORAGE ===
+- Body refrigerator (closed)
+- Body refrigerator (open)
+- Morgue drawer (closed)
+- Morgue drawer (open)
+- Body tray (empty)
+- Body tray (with sheet)
+- Cold storage unit
+- Temperature control panel
+
+=== AUTOPSY ROOM ===
+- Autopsy table (empty)
+- Autopsy table (with sheet)
+- Surgical light (morgue)
+- Instrument tray (autopsy)
+- Scale (organ)
+- Specimen jar (large)
+- Specimen jar (small)
+- Evidence bag
+- Body bag (folded)
+- Body bag (on floor)
+
+=== MORGUE EQUIPMENT ===
+- Morgue stretcher
+- Body lift
+- Embalming table
+- Embalming fluid tank
+- Drain table
+- Ventilation hood
+- Morgue sink
+- Biohazard container (morgue)
+
+=== VIEWING ROOM ===
+- Viewing casket (open)
+- Viewing casket (closed)
+- Flower arrangement (funeral)
+- Candle stand
+- Memorial photo frame
+- Guest book stand
+- Tissue box (funeral)
+- Viewing room chair
+
+=== MORGUE OFFICE ===
+- Morgue desk
+- Death certificate stack
+- Body ID tags
+- Toe tag
+- Personal effects box
+- Evidence locker
+- CCTV monitor (morgue)
+- Logbook
+
+=== SPOOKY ELEMENTS (Hidden Stage!) ===
+- Flickering light
+- Cobweb (corner)
+- Dust particles
+- Mysterious shadow
+- Ghost footprint
+- Creepy doll
+- Old photograph
+- Broken mirror
+- Candle (melting)
+- Ouija board
+
+=== MORGUE FLOOR/WALL ===
+- Morgue floor tile (cold gray)
+- Morgue floor tile (with drain)
+- Morgue wall (tiled)
+- Morgue door (heavy)
+- Warning sign (authorized only)
+- Biohazard sign
+- Emergency exit (basement)
+- Dim ceiling light
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Keep cute pixel art style even for spooky items! Arrange in neat rows by category. Label each item. Transparent background.

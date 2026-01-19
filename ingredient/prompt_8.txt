@@ -1,0 +1,96 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on FLOORS, WALLS, DOORS, and STRUCTURAL ELEMENTS.
+
+=== FLOOR TILES ===
+- Hospital floor (white)
+- Hospital floor (gray)
+- Checkered floor
+- Linoleum floor (green)
+- Linoleum floor (blue)
+- OR floor (green)
+- ER floor (red stripe)
+- Hallway floor
+- Bathroom floor tile
+
+=== FLOOR MARKINGS ===
+- Floor arrow
+- Floor line (yellow)
+- Floor line (red)
+- Wheelchair symbol
+- Emergency exit marking
+
+=== WALLS ===
+- Wall (horizontal)
+- Wall (vertical)
+- Wall corner (4 types in one row)
+- Wall T-junction
+- Glass wall
+- Curtain divider (closed)
+- Curtain divider (open)
+
+=== DOORS ===
+- Single door (closed)
+- Single door (open)
+- Double door (closed)
+- Double door (open)
+- Sliding door
+- Automatic door
+- Emergency exit door
+- Elevator door
+
+=== WINDOWS ===
+- Window (small)
+- Window (large)
+- Window with blinds
+- Observation window
+
+=== STAIRS AND ELEVATOR ===
+- Staircase (up)
+- Staircase (down)
+- Elevator interior
+- Wheelchair ramp
+
+=== CEILING ELEMENTS ===
+- Fluorescent light
+- Surgical light
+- Exit sign
+- Smoke detector
+- Security camera
+- Air vent
+
+=== OUTDOOR ===
+- Ambulance bay
+- Helipad
+- Sidewalk
+- Grass patch
+- Outdoor bench
+
+=== DECORATIONS ===
+- Potted plant (small)
+- Potted plant (large)
+- Wall clock
+- Bulletin board
+- Hand sanitizer
+- Fire extinguisher
+- AED cabinet
+- Vending machine
+- Water fountain
+- Trash can
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.

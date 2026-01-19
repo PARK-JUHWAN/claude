@@ -1,0 +1,97 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+**IMPORTANT: These are SMALL ITEMS (16x16 pixels each) that characters carry and use.**
+
+This sheet focuses on HANDHELD ITEMS - medications, syringes, supplies that nurses carry.
+
+=== INJECTABLE MEDICATIONS (주사약) ===
+- Ampule (clear)
+- Ampule (yellow)
+- Ampule (blue)
+- Ampule (red)
+- Vial (small)
+- Vial (large)
+- Prefilled syringe
+- Insulin pen
+
+=== ORAL MEDICATIONS (경구약) ===
+- Pill (white, round)
+- Pill (pink, round)
+- Pill (blue, oval)
+- Pill bottle (orange)
+- Pill bottle (white)
+- Pill packet (blister)
+- Medicine cup (with pills)
+- Liquid medicine bottle
+- Oral syringe (with medicine)
+- Pill box organizer
+
+=== IV SUPPLIES (수액 용품) ===
+- IV bag (clear)
+- IV bag (yellow)
+- IV bag (red/blood)
+- IV line tubing
+- IV catheter
+- Extension tubing
+- 3-way stopcock
+- Saline flush syringe
+
+=== SYRINGES AND NEEDLES (주사기) ===
+- Syringe (small, 1ml)
+- Syringe (medium, 5ml)
+- Syringe (large, 10ml)
+- Needle (capped)
+- Butterfly needle
+- Safety needle
+
+=== WOUND CARE (상처 케어) ===
+- Bandage roll
+- Gauze pad
+- Adhesive bandage
+- Medical tape
+- Cotton ball
+- Alcohol swab
+- Betadine swab
+- Wound dressing
+
+=== MONITORING ITEMS (모니터링) ===
+- Thermometer
+- Pulse oximeter (finger)
+- Blood pressure cuff
+- Stethoscope
+- Penlight
+- Blood glucose meter
+- Test strip
+
+=== PATIENT CARE ITEMS ===
+- Medicine cup (empty)
+- Water cup
+- Specimen cup
+- Urine cup
+- Emesis basin
+- Bedpan (small icon)
+- Ice pack
+- Hot pack
+
+=== DOCUMENTATION ===
+- Clipboard
+- Patient chart
+- Prescription paper
+- Medicine label
+- Barcode wristband
+- ID badge
+
+REMINDER: Each item should be SMALL (16x16 pixels). These are icons/items that characters pick up and carry.
+
+Every item must be drawn from ABOVE (bird's eye view). Arrange in neat rows by category. Label each item. Transparent background.

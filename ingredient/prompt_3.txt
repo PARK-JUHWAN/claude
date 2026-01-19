@@ -1,0 +1,185 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on OPERATING ROOM and EMERGENCY ROOM equipment.
+
+=== OPERATING ROOM - MAIN EQUIPMENT ===
+- Operating table (large, seen from above)
+- Surgical light (large circular light, seen from above)
+- Anesthesia machine (with monitors and tubes)
+- Anesthesia cart
+- Surgical instrument table (Mayo stand)
+- Back table (large table with instruments)
+- Kick bucket (small round bucket on wheels)
+- Suction machine
+- Electrocautery machine (Bovie)
+- Surgical microscope
+- C-arm X-ray machine
+- Patient warming blanket device
+- Tourniquet machine
+- Laparoscopy tower
+- Arthroscopy tower
+
+=== OPERATING ROOM - FURNITURE ===
+- Surgical stool (round, adjustable)
+- Step stool
+- Instrument cabinet
+- Sterile supply cabinet
+- Scrub sink (long, with multiple faucets)
+- Gown rack
+- Glove dispenser station
+- OR table attachment (arm board)
+- OR table attachment (leg stirrup)
+- Positioning pad set
+- Surgical drape rack
+- Warming cabinet
+- Blanket warmer
+
+=== OPERATING ROOM - SMALL ITEMS ===
+- Scalpel
+- Surgical scissors
+- Forceps
+- Retractor
+- Needle holder
+- Suture
+- Surgical clamp
+- Sponge
+- Gauze pack (sterile)
+- Surgical gloves (sterile pack)
+- Surgical gown (folded)
+- Surgical mask
+- Surgical cap
+- Sterile drape (folded)
+- Suction tip
+- Bovie pencil
+- Surgical stapler
+- Skin marker
+- Surgical tape
+- Bone saw
+- Drill
+- Chisel
+- Mallet
+
+=== EMERGENCY ROOM - MAIN EQUIPMENT ===
+- Trauma bed (with side rails)
+- ER stretcher
+- Cardiac monitor (large, on stand)
+- Defibrillator (ER style, on cart)
+- Ventilator (portable)
+- Crash cart (red, with drawers)
+- Code cart
+- Airway cart
+- Intubation equipment set
+- Chest tube insertion kit
+- Central line kit
+- Thoracotomy tray
+- Portable X-ray machine
+- Portable ultrasound
+- Point-of-care testing machine
+- Blood gas analyzer
+- Rapid infuser (blood warmer)
+- Hypothermia machine
+- External pacemaker
+
+=== EMERGENCY ROOM - TRAUMA SUPPLIES ===
+- Cervical collar (neck brace)
+- Spine board (backboard)
+- Head immobilizer
+- Pelvic binder
+- Splint (arm)
+- Splint (leg)
+- Traction splint
+- SAM splint
+- Air splint
+- Cast materials
+- Sling
+- Crutches
+- Wheelchair (ER style)
+- Trauma shears
+- Tourniquet (CAT)
+- Hemostatic gauze
+- Chest seal
+- Burn dressing
+
+=== EMERGENCY ROOM - AIRWAY EQUIPMENT ===
+- Laryngoscope
+- Laryngoscope blade set
+- Endotracheal tube
+- LMA (laryngeal mask)
+- Bag-valve mask (Ambu bag)
+- Oral airway
+- Nasal airway
+- Suction catheter
+- Yankauer suction
+- Oxygen mask
+- Nasal cannula
+- Non-rebreather mask
+- Nebulizer mask
+- CPAP mask
+- BiPAP machine
+- Oxygen tank (portable)
+- Oxygen regulator
+- Capnography monitor
+
+=== EMERGENCY ROOM - IV AND VASCULAR ===
+- IV pole (multiple hooks)
+- Rapid infusion pump
+- Pressure bag
+- Blood warmer
+- Central line catheter
+- Arterial line kit
+- IO drill (intraosseous)
+- Large bore IV
+- Blood tubing set
+- Level 1 infuser
+- Autotransfusion device
+
+=== EMERGENCY ROOM - MONITORING ===
+- 12-lead EKG machine
+- Cardiac monitor (portable)
+- Pulse oximeter (portable)
+- Blood pressure monitor (automatic)
+- Temperature probe
+- End-tidal CO2 monitor
+- Arterial line monitor
+- CVP monitor
+
+=== TRIAGE AND WAITING ===
+- Triage desk
+- Triage chair
+- Weight scale
+- Height measure
+- Triage computer station
+- Patient registration desk
+- Waiting room bench
+- Vending machine
+- Water fountain
+- TV screen (mounted)
+- Information board
+- Number ticket dispenser
+
+=== DECONTAMINATION ===
+- Decontamination shower
+- Chemical spill kit
+- Hazmat suit
+- Isolation gown
+- N95 mask box
+- Face shield
+- Goggles
+- Negative pressure room sign
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.

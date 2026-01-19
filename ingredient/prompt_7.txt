@@ -1,0 +1,103 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on PHARMACY, LABORATORY, and RADIOLOGY equipment.
+
+=== PHARMACY ===
+- Pharmacy counter
+- Medication shelf
+- Medication cabinet (locked)
+- Refrigerated cabinet
+- Pharmacy workstation
+- Pill counting tray
+- Pill counter machine
+- Medication dispenser (Pyxis)
+- IV compounding hood
+- Label printer
+
+=== PHARMACY SUPPLIES ===
+- Pill bottle (orange)
+- Pill bottle (white)
+- Medicine box
+- IV bag
+- Ampule
+- Vial
+- Syringe (prefilled)
+- Inhaler
+- Ointment tube
+- Prescription paper
+
+=== LABORATORY FURNITURE ===
+- Lab workbench
+- Lab stool
+- Specimen cabinet
+- Biohazard waste bin
+- Sharps container
+- Lab refrigerator
+- Fume hood
+- Biosafety cabinet
+
+=== LAB EQUIPMENT ===
+- Microscope
+- Centrifuge
+- Blood analyzer
+- Chemistry analyzer
+- Urinalysis machine
+- Blood gas analyzer
+- PCR machine
+- Incubator
+
+=== LAB SUPPLIES ===
+- Blood collection tray
+- Blood tubes (set)
+- Specimen cup
+- Culture plate
+- Test tube rack
+- Pipette
+- Autoclave
+
+=== RADIOLOGY MACHINES ===
+- X-ray machine (portable)
+- X-ray table
+- CT scanner
+- MRI machine
+- Ultrasound machine
+- Mammography machine
+- Bone density scanner
+
+=== RADIOLOGY ACCESSORIES ===
+- Lead apron
+- Lead apron rack
+- Thyroid shield
+- X-ray marker (L/R)
+- Positioning sponge
+- Contrast injector
+
+=== RADIOLOGY WORKSTATION ===
+- PACS workstation
+- Film viewer (lightbox)
+- Radiation warning sign
+- Lead-lined door
+
+=== DIALYSIS ===
+- Dialysis machine
+- Dialysis chair
+- Dialysis cart
+- Blood tubing set
+- Saline bags
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.

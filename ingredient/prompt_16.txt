@@ -1,0 +1,98 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on STATIONS - interactive objects for hospital gameplay (like Overcooked cooking stations).
+
+=== STORAGE STATIONS (창고) ===
+- Ampule storage cabinet
+- Ampule storage cabinet (open)
+- Oral medicine storage cabinet
+- Oral medicine storage cabinet (open)
+- IV fluid storage cabinet
+- IV fluid storage cabinet (open)
+- Syringe storage drawer
+- IV line storage drawer
+- Bandage storage cabinet
+- Supply cart (empty)
+- Supply cart (full)
+
+=== PREPARATION STATIONS (처치 준비대) ===
+- Treatment prep table (empty)
+- Treatment prep table (with tray)
+- IV mixing station
+- IV mixing station (in use)
+- Medication prep counter
+- Medication prep counter (in use)
+- Injection prep tray
+- Sterile field table
+
+=== MEDICATION STATIONS (약물 스테이션) ===
+- Pill packaging machine
+- Pill packaging machine (running)
+- Pill crusher/grinder
+- Pill crusher (in use)
+- Medicine cup dispenser
+- Oral syringe station
+- Medication cart
+- Medication cart (with meds)
+
+=== IV STATIONS (수액 스테이션) ===
+- IV warmer machine
+- IV warmer (heating)
+- Infusion pump station
+- Infusion pump (running)
+- IV pole stand
+- IV pole with bag
+- Blood warmer
+- Fluid warmer cabinet
+
+=== ESSENTIAL STATIONS (필수 스테이션) ===
+- Handwash sink
+- Handwash sink (water running)
+- Hand sanitizer stand
+- Scrub sink (surgical)
+- Glove dispenser station
+- Gown dispenser
+- Mask dispenser
+- PPE station
+
+=== PATIENT CARE STATIONS ===
+- Patient bed (empty)
+- Patient bed (with patient)
+- Bedside table
+- Vital signs monitor stand
+- Oxygen station
+- Suction machine stand
+- Call bell station
+
+=== WASTE STATIONS (폐기물) ===
+- Medical waste bin (red)
+- Sharps container stand
+- Biohazard bin
+- General waste bin
+- Linen hamper
+- Recycling bin (blue)
+
+=== SPECIAL STATIONS ===
+- Crash cart
+- Defibrillator station
+- Emergency supply cabinet
+- Code blue cart
+- Nursing station desk
+- Chart holder stand
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.

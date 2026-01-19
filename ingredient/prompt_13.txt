@@ -1,0 +1,90 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on INTERIOR DECORATIONS and FURNITURE for hospital maps.
+
+=== PLANTS ===
+- Small potted plant
+- Medium potted plant
+- Large potted plant
+- Tall floor plant
+- Cactus pot
+- Flower pot (colorful)
+- Hanging plant
+- Plant shelf
+- Flower vase
+- Bamboo plant
+
+=== WAITING ROOM FURNITURE ===
+- Waiting chair (single)
+- Waiting bench (3 seats)
+- Sofa (2 seats)
+- Coffee table
+- Magazine rack
+- Side table
+- Reception desk
+- Information kiosk
+- Ticket dispenser
+- Number display
+
+=== WALL DECORATIONS ===
+- Wall clock
+- Calendar
+- Bulletin board
+- Whiteboard
+- TV (wall mounted)
+- Painting (landscape)
+- Painting (abstract)
+- Mirror
+- Health poster
+- Department sign
+
+=== UTILITY ITEMS ===
+- Trash can (small)
+- Trash can (large)
+- Recycling bin
+- Vending machine (drinks)
+- Vending machine (snacks)
+- Water dispenser
+- Coffee machine
+- Microwave
+- Mini fridge
+- Water fountain
+
+=== SAFETY EQUIPMENT ===
+- Fire extinguisher
+- AED cabinet
+- First aid kit (wall)
+- Hand sanitizer dispenser
+- Soap dispenser
+- Paper towel dispenser
+- Emergency phone
+- Fire alarm pull
+
+=== OFFICE ITEMS ===
+- Office desk
+- Office chair
+- Computer monitor
+- Keyboard
+- Desk lamp
+- File cabinet
+- Bookshelf
+- Printer
+- Phone
+- Clipboard holder
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.

@@ -1,0 +1,102 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Examples of correct top-down view:
+- BED: We see the mattress surface from above. The pillow is a small rectangle at one end. We see the blanket covering the top. The bed frame is just a thin border around the edges.
+- CHAIR: We see the seat cushion from above. It looks like a square or circle. We barely see the backrest.
+- DESK: We see the desktop surface from above. It looks like a rectangle. We see items ON TOP of the desk.
+- CABINET: We see the top surface of the cabinet. The doors are barely visible at the front edge.
+- TRASH BIN: We see the circular opening at the top.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG.
+
+=== BEDS (seen from above - mattress visible) ===
+- Hospital bed empty
+- Hospital bed with patient lying down (we see top of head and body shape under blanket)
+- Hospital bed with blanket pulled back
+- ICU bed with side rails
+- Stretcher/gurney
+- Examination table
+- Operating table
+- Baby crib (seen from above)
+- Wheelchair (seen from above - seat visible)
+
+=== FURNITURE (seen from above - top surface visible) ===
+- Bedside table (we see the top surface)
+- Medical cart (we see items on top)
+- Overbed table
+- Office desk (we see desktop with items)
+- Office chair (we see seat cushion)
+- Waiting chair (we see seat)
+- Reception counter (long, seen from above)
+- Nurse station desk (curved, seen from above)
+
+=== STORAGE (seen from above - top visible, front edge shows doors) ===
+- Medicine cabinet
+- Supply shelf
+- Refrigerator
+- IV fluid rack
+- Crash cart
+- Linen cart
+- Drug cart
+
+=== STATIONS (seen from above) ===
+- Sink/washbasin (we see the basin from above)
+- IV preparation counter
+- Medication counter
+- Computer workstation
+
+=== EQUIPMENT (seen from above) ===
+- Patient monitor on stand
+- IV pole with bag
+- Vital signs monitor
+- Ventilator
+- Infusion pump
+- Defibrillator
+- Oxygen tank
+
+=== SMALL ITEMS (icon style, top-down) ===
+- Stethoscope
+- Syringe
+- IV bag
+- Pill bottle
+- Thermometer
+- Blood pressure cuff
+- Clipboard
+- Medicine tray
+- Bandage roll
+- Gauze pack
+
+=== WASTE BINS (seen from above - circular opening) ===
+- Trash bin
+- Biohazard bin (red)
+- Sharps container
+- Linen hamper
+
+=== STRUCTURAL (top-down view) ===
+- Door (seen from above - thin rectangle)
+- Floor tile
+- Wall edge (seen from above)
+- Privacy curtain
+- Room divider
+
+=== DECORATIVE ===
+- Potted plant (seen from above - leaves spread out)
+- Wall clock
+- Fire extinguisher
+- Vending machine
+- Water cooler
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces. This is critical for the game to work correctly.
+
+Arrange all items in neat rows. Consistent pixel art style. Transparent background.

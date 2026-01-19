@@ -1,0 +1,103 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on HOSPITAL LOBBY facilities and interactive buildings.
+
+=== ELEVATOR ===
+- Elevator door (closed)
+- Elevator door (open)
+- Elevator interior
+- Elevator button panel
+- Floor indicator display
+- Elevator waiting area mat
+
+=== CHANGING ROOM / LOCKER ===
+- Locker (closed)
+- Locker (open)
+- Locker row (3 lockers)
+- Changing room bench
+- Mirror (full length)
+- Costume display stand
+- Wardrobe cabinet
+- Shoe locker
+
+=== ATM / PAYMENT ===
+- ATM machine
+- ATM machine (in use)
+- Payment kiosk
+- Card reader terminal
+- Cash register
+- Coin exchange machine
+
+=== CONVENIENCE STORE / SHOP ===
+- Shop counter
+- Shop shelf (snacks)
+- Shop shelf (drinks)
+- Shop refrigerator
+- Gacha machine (capsule toy)
+- Gacha machine (glowing)
+- Prize display case
+- Shopping basket
+- Shopping cart (small)
+- Cash register
+
+=== ENTRANCE / EXIT ===
+- Hospital entrance door
+- Hospital entrance door (open)
+- Automatic door sensor
+- Welcome mat
+- Information desk
+- Reception counter
+- Guest sign-in kiosk
+- Security checkpoint
+- Visitor badge dispenser
+
+=== WAITING AREA ===
+- Waiting bench (2 seat)
+- Waiting bench (3 seat)
+- Waiting chair (single)
+- Round table (small)
+- Coffee table
+- Magazine rack
+- TV screen (wall)
+- Digital signage board
+- Ticket dispenser
+- Queue number display
+
+=== LOBBY DECORATIONS ===
+- Information board
+- Hospital directory sign
+- Floor map display
+- Large potted plant
+- Fountain (decorative)
+- Statue/sculpture
+- Award display case
+- Photo wall
+- Clock (large, wall)
+- Welcome banner
+
+=== LOBBY SERVICES ===
+- Wheelchair station
+- Stroller parking
+- Umbrella stand
+- Lost and found box
+- Charging station (phone)
+- Wi-Fi hotspot sign
+- Emergency phone booth
+- Security desk
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.

@@ -1,0 +1,163 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on FLOORS, WALLS, DOORS, and STRUCTURAL ELEMENTS for hospital maps.
+
+=== FLOOR TILES - BASIC ===
+- Hospital floor tile (white)
+- Hospital floor tile (light gray)
+- Hospital floor tile (beige)
+- Checkered floor tile
+- Linoleum floor (green)
+- Linoleum floor (blue)
+- Linoleum floor (pink)
+- Carpet tile (waiting room)
+- Anti-slip floor tile
+- Rubber floor mat
+
+=== FLOOR TILES - DEPARTMENT SPECIFIC ===
+- OR floor (green, sterile)
+- ER floor (red stripe)
+- ICU floor (blue accent)
+- Pediatric floor (colorful)
+- Hallway floor (with center line)
+- Lobby floor (polished)
+- Bathroom floor (wet area tile)
+- Elevator floor
+- Stairwell floor
+- Entrance mat
+
+=== FLOOR MARKINGS ===
+- Floor arrow (direction)
+- Floor line (yellow, caution)
+- Floor line (red, emergency)
+- Floor line (blue, pathway)
+- Floor line (green, exit)
+- Wheelchair symbol (floor)
+- Emergency exit marking
+- Fire assembly point
+- No parking zone marking
+- Bed zone marking
+
+=== WALLS - BASIC ===
+- Wall (top view, horizontal)
+- Wall (top view, vertical)
+- Wall corner (top-left)
+- Wall corner (top-right)
+- Wall corner (bottom-left)
+- Wall corner (bottom-right)
+- Wall T-junction (up)
+- Wall T-junction (down)
+- Wall T-junction (left)
+- Wall T-junction (right)
+- Wall cross junction
+
+=== WALLS - VARIANTS ===
+- Wall with baseboard
+- Wall with handrail
+- Glass wall section
+- Half wall (low partition)
+- Curtain divider (closed)
+- Curtain divider (open)
+- Privacy screen
+- Cubicle partition
+- Nurse station counter wall
+- Reception desk wall
+
+=== DOORS ===
+- Single door (closed)
+- Single door (open)
+- Double door (closed)
+- Double door (open)
+- Sliding door (closed)
+- Sliding door (open)
+- Automatic door (closed)
+- Automatic door (open)
+- Emergency exit door
+- Fire door
+- OR door (with window)
+- Isolation room door
+- Staff only door
+- Bathroom door
+- Elevator door (closed)
+- Elevator door (open)
+
+=== WINDOWS ===
+- Window (small, wall mounted)
+- Window (large, wall mounted)
+- Window with blinds (closed)
+- Window with blinds (open)
+- Observation window (large)
+- Nursery viewing window
+- ICU window
+- Door window (small)
+- Skylight (floor view)
+- Frosted window
+
+=== STAIRS AND ELEVATORS ===
+- Staircase (going up)
+- Staircase (going down)
+- Staircase landing
+- Elevator interior
+- Elevator button panel
+- Escalator (up)
+- Escalator (down)
+- Ramp (wheelchair accessible)
+- Ramp with handrail
+
+=== CEILING ELEMENTS (seen from below in top-down) ===
+- Ceiling light (fluorescent)
+- Ceiling light (round)
+- Surgical light (OR)
+- Emergency light
+- Exit sign
+- Sprinkler head
+- Smoke detector
+- Security camera
+- Air vent
+- Ceiling fan
+
+=== OUTDOOR AND ENTRANCE ===
+- Hospital entrance canopy
+- Ambulance bay marking
+- Helipad marking
+- Parking lot lines
+- Sidewalk tile
+- Grass patch
+- Flower bed
+- Bench (outdoor)
+- Trash can (outdoor)
+- Planter box
+
+=== DECORATIVE ELEMENTS ===
+- Potted plant (small)
+- Potted plant (large)
+- Floor plant (tall)
+- Wall clock
+- Wall calendar
+- Bulletin board
+- Hand sanitizer dispenser
+- Fire extinguisher
+- AED cabinet
+- Vending machine
+- Water fountain
+- Magazine rack
+- Coat rack
+- Umbrella stand
+- Welcome sign
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.

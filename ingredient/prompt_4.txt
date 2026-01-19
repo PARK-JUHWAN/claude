@@ -1,0 +1,150 @@
+Create a pixel art asset sheet for a top-down 2D hospital RPG game.
+
+VERY IMPORTANT - CAMERA ANGLE:
+
+This is a BIRD'S EYE VIEW game. The camera is ABOVE the objects, looking DOWN.
+
+CORRECT: We see the TOP SURFACE of every object.
+WRONG: We see the FRONT or SIDE of objects.
+
+Think of it like looking down from the ceiling at the floor. Everything is seen from ABOVE.
+
+Reference games with correct view: Pokemon FireRed overworld, RPG Maker VX Ace maps, Stardew Valley farm, Zelda Link to the Past.
+
+Style: Cute pixel art. Transparent background PNG. Label each item with its name below.
+
+This sheet focuses on PHARMACY, LABORATORY, and RADIOLOGY equipment.
+
+=== PHARMACY - FURNITURE ===
+- Pharmacy counter
+- Pharmacy shelf (medications)
+- Medication cabinet (locked)
+- Refrigerated medicine cabinet
+- Narcotic safe (locked)
+- Pharmacy workstation
+- Pill counting tray
+- Prescription basket
+- Pharmacy cart
+- Drive-thru window
+
+=== PHARMACY - EQUIPMENT ===
+- Pill counter machine
+- Pill packaging machine
+- Label printer
+- Barcode scanner
+- Medication dispensing machine (Pyxis)
+- IV compounding hood
+- Laminar flow hood
+- Medication crusher
+- Tablet splitter
+- Electronic balance scale
+
+=== PHARMACY - SUPPLIES ===
+- Pill bottle (orange)
+- Pill bottle (white)
+- Medicine box
+- Blister pack
+- IV bag
+- Syringe (prefilled)
+- Ampule
+- Vial
+- Eye drops bottle
+- Inhaler
+- Ointment tube
+- Liquid medicine bottle
+- Prescription paper
+- Medication label
+- Pill organizer box
+
+=== LABORATORY - FURNITURE ===
+- Lab workbench
+- Lab stool
+- Specimen storage cabinet
+- Chemical storage cabinet
+- Biohazard waste bin
+- Sharps container
+- Lab refrigerator
+- Lab freezer (-80C)
+- Fume hood
+- Biosafety cabinet
+
+=== LABORATORY - ANALYSIS EQUIPMENT ===
+- Microscope
+- Centrifuge
+- Blood analyzer (hematology)
+- Chemistry analyzer
+- Urinalysis machine
+- Blood gas analyzer
+- Coagulation analyzer
+- Blood culture machine
+- PCR machine
+- Electrophoresis unit
+
+=== LABORATORY - COLLECTION AND PROCESSING ===
+- Blood collection tray
+- Tourniquet
+- Blood collection tubes (set)
+- Specimen cup
+- Urine collection container
+- Stool sample container
+- Swab kit
+- Culture plate (petri dish)
+- Slide box
+- Test tube rack
+- Pipette
+- Vortex mixer
+- Incubator
+- Autoclave
+- Lab timer
+
+=== RADIOLOGY - IMAGING MACHINES ===
+- X-ray machine (portable)
+- X-ray machine (standing)
+- X-ray table
+- CT scanner
+- MRI machine
+- Ultrasound machine
+- Mammography machine
+- Fluoroscopy machine
+- Bone density scanner (DEXA)
+- PET scanner
+
+=== RADIOLOGY - ACCESSORIES ===
+- Lead apron
+- Lead apron rack
+- Thyroid shield
+- Lead glasses
+- X-ray marker (L/R)
+- Positioning sponge
+- Sandbag (positioning)
+- X-ray grid
+- Cassette holder
+- Image receptor
+
+=== RADIOLOGY - WORKSTATION ===
+- PACS workstation (monitors)
+- Radiologist desk
+- Film viewer (lightbox)
+- CD burner station
+- Report dictation mic
+- Contrast media warmer
+- Contrast injector
+- Lead-lined door
+- Radiation warning sign
+- Dosimeter badge
+
+=== DIALYSIS EQUIPMENT ===
+- Dialysis machine
+- Dialysis chair
+- Dialysis bed
+- Dialysis cart
+- Dialysis catheter kit
+- Saline bags (dialysis)
+- Blood tubing set
+- Dialyzer (filter)
+- Water treatment unit
+- Heparin pump
+
+REMINDER: Every object must be drawn as if the camera is on the CEILING looking DOWN. We see TOP SURFACES, not front faces.
+
+Arrange all items in neat rows by category. Label each item. Consistent pixel art style. Transparent background.
