@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>간호사 근무표 자동생성 | 포오프</title>
+<meta name="description" content="간호사 근무표, 수학적 최적화 알고리즘으로 공정하게 자동 생성합니다. 희망 근무 반영부터 균등 배분까지, 포오프로 근무표 고민 끝!">
+<meta name="keywords" content="포오프,4off,fouroff,간호사 근무표,듀티표,근무표 자동생성,수간호사,병원 스케줄링,간호사 스케줄,희망근무,4연휴,나이트 근무">
+<meta property="og:type" content="website">
+<meta property="og:title" content="간호사 근무표 자동생성 | 포오프">
+<meta property="og:description" content="수학적 알고리즘으로 공정한 근무표를 자동 생성합니다">
+<meta property="og:url" content="https://park-juhwan.github.io/fouroff-web/">
+<meta property="og:image" content="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/fouroff_icon.png">
+<meta name="apple-itunes-app" content="app-id=6756883621">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/fouroff_icon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/fouroff_icon.png" alt="포오프" height="40">
+<span class="brand-text">포오프</span>
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">기능소개</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="pages/features.html#auto-generate">
+<strong>자동 근무표 생성</strong>
+<small>AI 알고리즘이 모든 조건을 만족하는 최적의 근무표 생성</small>
+</a>
+<a class="dropdown-item" href="pages/features.html#preference">
+<strong>희망근무 입력</strong>
+<small>달력에서 터치 한 번으로 D/E/N/X 선택</small>
+</a>
+<a class="dropdown-item" href="pages/features.html#fair-distribution">
+<strong>4연휴 공정 배분</strong>
+<small>모든 간호사에게 균등한 휴무 배분</small>
+</a>
+<a class="dropdown-item" href="pages/features.html#work-conditions">
+<strong>근무조건 설정</strong>
+<small>연속근무 제한, N 후 보장, 저연차 방지 등</small>
+</a>
+<a class="dropdown-item" href="pages/features.html#collaboration">
+<strong>방 공유/협업</strong>
+<small>병동별로 근무표 방을 만들어 실시간 협업</small>
+</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">솔루션</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="pages/features.html">
+<strong>병동용</strong>
+<small>교대근무 간호사를 위한 솔루션</small>
+</a>
+<a class="dropdown-item disabled" href="#">
+<strong>외래용</strong>
+<small>(준비중)</small>
+</a>
+</div>
+</li>
+<li class="nav-item"><a class="nav-link" href="pages/pricing.html">요금제</a></li>
+<li class="nav-item"><a class="nav-link" href="pages/faq.html">고객센터</a></li>
+<li class="nav-item"><a class="nav-link" href="pages/guide.html">사용가이드</a></li>
+<li class="nav-item"><a class="nav-link" href="pages/about.html">만든사람</a></li>
+</ul>
+<div class="navbar-cta d-none d-lg-flex">
+<a href="mailto:naruto0414@naver.com" class="btn btn-outline-primary mr-2">도입문의</a>
+<a href="#download" class="btn btn-primary">앱 다운로드</a>
+</div>
+</div>
+</div>
+</nav>
+<div class="mobile-menu-cta d-lg-none">
+<a href="mailto:naruto0414@naver.com" class="btn btn-outline-primary btn-block mb-2"><i class="fas fa-envelope mr-2"></i>도입문의</a>
+<a href="#download" class="btn btn-primary btn-block"><i class="fas fa-mobile-alt mr-2"></i>앱 다운로드</a>
+</div>
+
+<section class="hero-section">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 hero-content">
+<h1>공정한 근무표, 자동으로</h1>
+<p class="hero-subtitle">수학적 알고리즘이 만드는 최적의 간호사 스케줄</p>
+<div class="hero-buttons">
+<a href="#download" class="btn btn-light btn-lg mr-3">앱 다운로드</a>
+<a href="mailto:naruto0414@naver.com" class="btn btn-outline-light btn-lg">도입문의</a>
+</div>
+</div>
+<div class="col-lg-6 hero-image">
+<div class="phone-mockup">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/01_intro.png" alt="포오프 앱 화면">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="problem-section sft-py-120">
+<div class="container">
+<h2 class="section-title text-center">이런 고민, 있으셨죠?</h2>
+<div class="row justify-content-center mb-5">
+<div class="col-lg-8">
+<div class="problem-list">
+<div class="problem-item">
+<i class="fas fa-times-circle text-danger"></i>
+<span>매달 근무표 짜느라 야근하는 수간호사</span>
+</div>
+<div class="problem-item">
+<i class="fas fa-times-circle text-danger"></i>
+<span>4연휴 배분이 불공평하다는 불만</span>
+</div>
+<div class="problem-item">
+<i class="fas fa-times-circle text-danger"></i>
+<span>희망 근무가 잘 반영되지 않는 문제</span>
+</div>
+<div class="problem-item">
+<i class="fas fa-times-circle text-danger"></i>
+<span>엑셀 수작업으로 인한 실수</span>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mb-5">
+<i class="fas fa-arrow-down fa-2x text-primary"></i>
+</div>
+<h2 class="section-title text-center">포오프가 해결합니다</h2>
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="solution-list">
+<div class="solution-item">
+<i class="fas fa-check-circle text-success"></i>
+<span>원클릭 자동 생성</span>
+</div>
+<div class="solution-item">
+<i class="fas fa-check-circle text-success"></i>
+<span>수학적 공정 배분</span>
+</div>
+<div class="solution-item">
+<i class="fas fa-check-circle text-success"></i>
+<span>희망 근무 최대 반영</span>
+</div>
+<div class="solution-item">
+<i class="fas fa-check-circle text-success"></i>
+<span>실시간 협업 시스템</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="why-section">
+<div class="container">
+<h2 class="section-title text-center text-white">Why 포오프</h2>
+<div class="row">
+<div class="col-md-6 col-lg-3 mb-4">
+<div class="why-card">
+<div class="why-icon"><i class="fas fa-balance-scale"></i></div>
+<h4>수학적 공정성</h4>
+<p>알고리즘이 N/X를 수학적으로 균등 배분</p>
+<p>특정인 편중 없는 투명한 배분</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 mb-4">
+<div class="why-card">
+<div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+<h4>스마트 제약조건</h4>
+<p>연속근무 제한 자동 적용</p>
+<p>N 근무 후 D/E 금지</p>
+<p>저연차끼리 근무 방지</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 mb-4">
+<div class="why-card">
+<div class="why-icon"><i class="fas fa-users"></i></div>
+<h4>실시간 협업</h4>
+<p>방 기반 공유 시스템</p>
+<p>희망근무 실시간 수집</p>
+<p>수간호사-간호사 연결</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 mb-4">
+<div class="why-card">
+<div class="why-icon"><i class="fas fa-mobile-alt"></i></div>
+<h4>간편한 사용</h4>
+<p>터치 한 번으로 입력</p>
+<p>복잡한 설정 없이 시작</p>
+<p>모바일 최적화</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="features-grid-section sft-py-120">
+<div class="container">
+<h2 class="section-title text-center">포오프 기능 소개</h2>
+<div class="row">
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="feature-card">
+<div class="feature-icon"><i class="fas fa-robot"></i></div>
+<h4>자동 근무표 생성</h4>
+<p>AI가 모든 조건 충족하는 최적해 도출</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="feature-card">
+<div class="feature-icon"><i class="fas fa-edit"></i></div>
+<h4>희망근무 입력</h4>
+<p>달력 UI로 D/E/N/X 간편 선택</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="feature-card">
+<div class="feature-icon"><i class="fas fa-balance-scale"></i></div>
+<h4>4연휴 공정 배분</h4>
+<p>수학적으로 균등한 연휴 배분</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="feature-card">
+<div class="feature-icon"><i class="fas fa-cog"></i></div>
+<h4>근무조건 설정</h4>
+<p>병동 상황에 맞는 세부 조건 설정</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 mb-4">
+<div class="feature-card">
+<div class="feature-icon"><i class="fas fa-link"></i></div>
+<h4>방 공유</h4>
+<p>팀원과 실시간 동기화</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="feature-detail-section sft-py-120">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 mb-4 mb-lg-0">
+<div class="phone-mockup-small">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/10_result_new.png" alt="근무표 생성 결과">
+</div>
+</div>
+<div class="col-lg-6">
+<p class="sft-tag sft-tag-black">Auto Generate</p>
+<h3>버튼 하나로 완성되는 근무표</h3>
+<p class="sft-text-15">모든 제약조건을 만족하는 최적의 근무표를 수학적 알고리즘이 자동으로 생성합니다. 더 이상 엑셀과 씨름하지 마세요.</p>
+<a href="pages/features.html#auto-generate" class="feature-link">자세히 알아보기 <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="feature-detail-section feature-detail-alt sft-py-120">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+<div class="phone-mockup-small">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/09_input_preference.png" alt="희망근무 입력">
+</div>
+</div>
+<div class="col-lg-6 order-lg-1">
+<p class="sft-tag sft-tag-black">Preference Input</p>
+<h3>터치 한 번으로 희망 입력</h3>
+<p class="sft-text-15">달력에서 원하는 날짜를 터치하고 D/E/N/X 중 선택하면 끝. 같이 근무하고 싶지 않은 동료도 설정 가능합니다.</p>
+<a href="pages/features.html#preference" class="feature-link">자세히 알아보기 <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="feature-detail-section sft-py-120">
+<div class="container text-center">
+<p class="sft-tag sft-tag-black">Work Conditions</p>
+<h3>병동 상황에 맞는 세밀한 설정</h3>
+<p class="sft-text-15 mb-5">주말/평일 근무자 수, 나이트 개수, 저연차끼리 방지 등 우리 병동만의 규칙을 설정하세요.</p>
+<div class="wide-screenshot">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/06_step3_wallet_new.png" alt="근무조건 설정">
+</div>
+</div>
+</section>
+
+<section class="how-it-works-section sft-py-120">
+<div class="container">
+<h2 class="section-title text-center">사용 방법</h2>
+<ul class="nav nav-tabs justify-content-center mb-5" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#tab-headnurse" role="tab">수간호사</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#tab-nurse" role="tab">간호사</a>
+</li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane fade show active" id="tab-headnurse" role="tabpanel">
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-number">1</div>
+<div class="timeline-content">
+<h5>방 생성</h5>
+<p>병동 이름으로 방을 만들어요</p>
+<div class="timeline-image">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/03_create_room.png" alt="방 생성">
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-number">2</div>
+<div class="timeline-content">
+<h5>기본정보 입력</h5>
+<p>연/월, 간호사 수, 근무 유형 설정</p>
+<div class="timeline-image">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/04_step1_basic_new.png" alt="기본정보 입력">
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-number">3</div>
+<div class="timeline-content">
+<h5>과거 3일 입력</h5>
+<p>연속근무 방지를 위한 데이터 입력</p>
+<div class="timeline-image">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/05_step2_past3days_new.png" alt="과거 3일 입력">
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-number">4</div>
+<div class="timeline-content">
+<h5>근무조건 설정</h5>
+<p>병동 규칙에 맞게 조건 설정</p>
+<div class="timeline-image">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/06_step3_wallet_new.png" alt="근무조건 설정">
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-number">5</div>
+<div class="timeline-content">
+<h5>근무표 생성</h5>
+<p>버튼 클릭으로 최적의 근무표 완성</p>
+<div class="timeline-image">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/10_result_new.png" alt="근무표 생성">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tab-pane fade" id="tab-nurse" role="tabpanel">
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-number">1</div>
+<div class="timeline-content">
+<h5>방 입장</h5>
+<p>수간호사님께 받은 방 정보로 입장</p>
+<div class="timeline-image">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/08_join_room.png" alt="방 입장">
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-number">2</div>
+<div class="timeline-content">
+<h5>희망근무 입력</h5>
+<p>달력에서 D/E/N/X 선택</p>
+<div class="timeline-image">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/09_input_preference.png" alt="희망근무 입력">
+</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-number">3</div>
+<div class="timeline-content">
+<h5>결과 확인</h5>
+<p>생성된 근무표를 확인하세요</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="testimonial-section sft-py-80">
+<div class="container">
+<div class="testimonial-carousel">
+<div class="testimonial-item">
+<div class="testimonial-bubble">
+<i class="fas fa-quote-left"></i>
+<p>엑셀 안 써도 돼서 너무 좋아요</p>
+</div>
+</div>
+<div class="testimonial-item">
+<div class="testimonial-bubble">
+<i class="fas fa-quote-left"></i>
+<p>4연휴 불만이 사라졌어요</p>
+</div>
+</div>
+<div class="testimonial-item">
+<div class="testimonial-bubble">
+<i class="fas fa-quote-left"></i>
+<p>희망근무가 잘 반영돼요</p>
+</div>
+</div>
+<div class="testimonial-item">
+<div class="testimonial-bubble">
+<i class="fas fa-quote-left"></i>
+<p>매달 야근이 없어졌어요</p>
+</div>
+</div>
+<div class="testimonial-item">
+<div class="testimonial-bubble">
+<i class="fas fa-quote-left"></i>
+<p>간호사들 반응이 좋아요</p>
+</div>
+</div>
+<div class="testimonial-item">
+<div class="testimonial-bubble">
+<i class="fas fa-quote-left"></i>
+<p>공정해서 불만이 없어요</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="target-section sft-py-120">
+<div class="container">
+<h2 class="section-title text-center">이런 분께 추천합니다</h2>
+<div class="row">
+<div class="col-md-6 col-lg-3 mb-4">
+<div class="target-card">
+<div class="target-icon"><i class="fas fa-user-nurse"></i></div>
+<p>매달 근무표 때문에 야근하는 수간호사님</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 mb-4">
+<div class="target-card">
+<div class="target-icon"><i class="fas fa-file-excel"></i></div>
+<p>엑셀로 근무표 짜다가 실수한 경험이 있는 분</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 mb-4">
+<div class="target-card">
+<div class="target-icon"><i class="fas fa-heart"></i></div>
+<p>간호사들 희망을 최대한 반영하고 싶은 분</p>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 mb-4">
+<div class="target-card">
+<div class="target-icon"><i class="fas fa-balance-scale"></i></div>
+<p>공정하고 투명한 근무표를 원하는 병동</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="cta-section" id="download">
+<div class="container text-center">
+<h2>근무표 고민에서 벗어나세요</h2>
+<p class="cta-subtitle">지금 바로 시작하세요</p>
+<div class="store-badges">
+<a href="https://apps.apple.com/kr/app/%ED%8F%AC%EC%98%A4%ED%94%84/id6756883621" target="_blank" class="store-badge">
+<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83" alt="App Store에서 다운로드">
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.juhwanpark.fouroff&hl=ko" target="_blank" class="store-badge">
+<img src="https://play.google.com/intl/en_us/badges/static/images/badges/ko_badge_web_generic.png" alt="Google Play에서 다운로드">
+</a>
+</div>
+<div class="qr-codes mt-5">
+<div class="row justify-content-center">
+<div class="col-auto">
+<div class="qr-item">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/qr_appstore.png" alt="iOS QR 코드">
+<p>iOS</p>
+</div>
+</div>
+<div class="col-auto">
+<div class="qr-item">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/qr_playstore.png" alt="Android QR 코드">
+<p>Android</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="footer-section">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 mb-4">
+<div class="footer-brand">
+<img src="https://raw.githubusercontent.com/PARK-JUHWAN/claude/main/homepage/fouroff_icon.png" alt="포오프" height="40">
+<span>포오프</span>
+</div>
+<div class="footer-contact">
+<p><strong>대표:</strong> 박주환</p>
+<p><strong>이메일:</strong> naruto0414@naver.com</p>
+<p><strong>전화:</strong> 010-8626-3802</p>
+<p><strong>주소:</strong> 서울시 강남구 개포로26길 16</p>
+</div>
+</div>
+<div class="col-6 col-lg-2 mb-4">
+<h5>서비스</h5>
+<ul class="footer-links">
+<li><a href="pages/features.html">기능 소개</a></li>
+<li><a href="pages/pricing.html">요금제</a></li>
+<li><a href="pages/guide.html">사용 가이드</a></li>
+</ul>
+</div>
+<div class="col-6 col-lg-2 mb-4">
+<h5>지원</h5>
+<ul class="footer-links">
+<li><a href="pages/faq.html">고객센터</a></li>
+<li><a href="pages/faq.html">FAQ</a></li>
+<li><a href="mailto:naruto0414@naver.com">도입문의</a></li>
+</ul>
+</div>
+<div class="col-6 col-lg-2 mb-4">
+<h5>법적 고지</h5>
+<ul class="footer-links">
+<li><a href="https://park-juhwan.github.io/fouroff-privacy/" target="_blank">개인정보처리방침</a></li>
+<li><a href="pages/terms.html">이용약관</a></li>
+</ul>
+</div>
+<div class="col-6 col-lg-2 mb-4">
+<h5>다운로드</h5>
+<div class="footer-store-badges">
+<a href="https://apps.apple.com/kr/app/%ED%8F%AC%EC%98%A4%ED%94%84/id6756883621" target="_blank">
+<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ko-kr?size=250x83" alt="App Store">
+</a>
+<a href="https://play.google.com/store/apps/details?id=com.juhwanpark.fouroff&hl=ko" target="_blank">
+<img src="https://play.google.com/intl/en_us/badges/static/images/badges/ko_badge_web_generic.png" alt="Google Play">
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2026 포오프. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
