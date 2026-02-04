@@ -335,6 +335,59 @@ main {
   color: var(--brand-color);
 }
 
+/* Dropdown Arrow */
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 4px;
+  transition: transform 0.3s;
+}
+
+.header__nav-item--dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Desktop Dropdown Menu */
+.header__nav-item--dropdown {
+  position: relative;
+}
+
+.header__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 150px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 12px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  transform: translateX(-50%) translateY(10px);
+  z-index: 1001;
+}
+
+.header__nav-item--dropdown:hover .header__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.header__dropdown-link {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1e24;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header__dropdown-link:hover {
+  background-color: var(--brand-color-light);
+  color: var(--brand-color);
+}
+
 /* Mobile Menu Toggle */
 .header__menu-toggle {
   display: none;
@@ -403,6 +456,62 @@ main {
 }
 
 .mobile-nav__link:hover {
+  color: var(--brand-color);
+}
+
+/* Mobile Nav Accordion */
+.mobile-nav__item--accordion {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-nav__accordion-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1e24;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mobile-nav__accordion-toggle:hover {
+  color: var(--brand-color);
+}
+
+.accordion-arrow {
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.mobile-nav__item--accordion.active .accordion-arrow {
+  transform: rotate(180deg);
+}
+
+.mobile-nav__submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding-left: 16px;
+}
+
+.mobile-nav__item--accordion.active .mobile-nav__submenu {
+  max-height: 200px;
+}
+
+.mobile-nav__sublink {
+  display: block;
+  padding: 12px 0;
+  font-size: 16px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mobile-nav__sublink:hover {
   color: var(--brand-color);
 }
 
@@ -512,6 +621,81 @@ main {
 .hero .owl-dot.active {
   background-color: #ffffff !important;
   transform: scale(1.2);
+}
+
+/* --------------------------------------------------------------------------
+   5.2.1 Page Hero (Sub-page Banner)
+   -------------------------------------------------------------------------- */
+
+.page-hero {
+  position: relative;
+  padding: 140px 0 80px;
+  background-color: var(--brand-color);
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+}
+
+.page-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.95) 0%, rgba(29, 78, 216, 0.9) 100%);
+}
+
+.page-hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+}
+
+.page-hero__title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.page-hero__subtitle {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.breadcrumb__item {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.breadcrumb__item a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s;
+}
+
+.breadcrumb__item a:hover {
+  color: #ffffff;
+}
+
+.breadcrumb__separator {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.breadcrumb__item--active {
+  color: #ffffff;
+  font-weight: 500;
 }
 
 /* --------------------------------------------------------------------------
@@ -690,6 +874,31 @@ main {
 .department-card__text {
   font-size: 0.95em;
   color: var(--text-secondary);
+}
+
+.department-card__cta {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--brand-color);
+  transition: color 0.3s;
+}
+
+.department-card:hover .department-card__cta {
+  color: var(--brand-color-hover);
+}
+
+/* 3-column department row */
+.departments-row--3col .col-4 {
+  width: 33.333%;
+}
+
+/* Intro CTA Group */
+.intro-cta-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 /* Doctor Card */
@@ -875,6 +1084,10 @@ main {
   margin-bottom: 40px;
 }
 
+.footer__grid--3col {
+  grid-template-columns: 2fr 1fr 1.5fr;
+}
+
 .footer__logo img {
   height: 40px;
   margin-bottom: 20px;
@@ -1006,6 +1219,275 @@ main {
   color: var(--text-secondary);
 }
 
+/* --------------------------------------------------------------------------
+   5.8 Sub-page Content Layout
+   -------------------------------------------------------------------------- */
+
+.subpage-content {
+  padding: 80px 0;
+}
+
+.subpage-content__intro {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.subpage-content__intro h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #1a1e24;
+}
+
+.subpage-content__intro p {
+  font-size: 1.1em;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.content-grid--2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content-grid--3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Content Card */
+.content-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.content-card__icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.content-card__title {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #1a1e24;
+  margin-bottom: 12px;
+}
+
+.content-card__text {
+  font-size: 0.95em;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Feature List */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.feature-list__item:last-child {
+  border-bottom: none;
+}
+
+.feature-list__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--brand-color);
+}
+
+.feature-list__content h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1e24;
+}
+
+.feature-list__content p {
+  font-size: 0.9em;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Doctor Detail Card */
+.doctor-detail-card {
+  display: flex;
+  gap: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.doctor-detail-card__image {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.doctor-detail-card__image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.doctor-detail-card__content {
+  flex: 1;
+}
+
+.doctor-detail-card__name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.doctor-detail-card__specialty {
+  font-size: 1em;
+  color: var(--brand-color);
+  margin-bottom: 16px;
+}
+
+.doctor-detail-card__info {
+  margin-bottom: 16px;
+}
+
+.doctor-detail-card__info h5 {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.doctor-detail-card__info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.doctor-detail-card__info li {
+  font-size: 0.95em;
+  color: var(--text-secondary);
+  padding: 4px 0;
+}
+
+/* Facility Detail Card */
+.facility-detail-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 350px;
+}
+
+.facility-detail-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.facility-detail-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.8));
+}
+
+.facility-detail-card__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.facility-detail-card__title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.facility-detail-card__desc {
+  font-size: 0.95em;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Treatment Section */
+.treatment-section {
+  padding: 60px 0;
+}
+
+.treatment-section--gray {
+  background-color: var(--bg-gray);
+}
+
+.treatment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.treatment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.treatment-item__icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-color-light);
+  border-radius: 50%;
+}
+
+.treatment-item__icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.treatment-item__content h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.treatment-item__content p {
+  font-size: 0.9em;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
 /* ==========================================================================
    6. Responsive
    ========================================================================== */
@@ -1040,8 +1522,40 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .footer__grid--3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .location__info {
     grid-template-columns: 1fr;
+  }
+
+  /* Sub-page responsive */
+  .page-hero {
+    padding: 120px 0 60px;
+  }
+
+  .page-hero__title {
+    font-size: 2em;
+  }
+
+  .content-grid--2col,
+  .content-grid--3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .treatment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-detail-card {
+    flex-direction: column;
+  }
+
+  .doctor-detail-card__image {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
   }
 
   h1 { font-size: 2.5em; }
@@ -1125,14 +1639,60 @@ main {
     width: 100%;
   }
 
+  .departments-row--3col .col-4 {
+    width: 100%;
+  }
+
   .footer__grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 
+  .footer__grid--3col {
+    grid-template-columns: 1fr;
+  }
+
   .btn--lg {
     padding: 14px 28px;
     font-size: 14px;
+  }
+
+  /* Sub-page mobile */
+  .page-hero {
+    padding: 100px 0 50px;
+  }
+
+  .page-hero__title {
+    font-size: 1.75em;
+  }
+
+  .page-hero__subtitle {
+    font-size: 1em;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+  }
+
+  .subpage-content {
+    padding: 50px 0;
+  }
+
+  .content-grid--2col,
+  .content-grid--3col {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-cta-group {
+    flex-direction: column;
+  }
+
+  .intro-cta-group .btn {
+    width: 100%;
+  }
+
+  .facility-detail-card {
+    height: 280px;
   }
 
   h1 { font-size: 2em; }

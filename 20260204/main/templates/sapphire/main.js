@@ -36,6 +36,7 @@
       this.body = $('body');
 
       this.bindEvents();
+      this.initAccordion();
     },
 
     bindEvents: function() {
@@ -47,7 +48,7 @@
         self.toggleMenu();
       });
 
-      // Close menu when clicking a link
+      // Close menu when clicking a link (but not accordion toggle)
       this.mobileNav.find('a').on('click', function() {
         self.closeMenu();
       });
@@ -67,6 +68,15 @@
       });
     },
 
+    initAccordion: function() {
+      // Mobile nav accordion for dropdown items
+      $('.mobile-nav__accordion-toggle').on('click', function(e) {
+        e.preventDefault();
+        const parent = $(this).closest('.mobile-nav__item--accordion');
+        parent.toggleClass('active');
+      });
+    },
+
     toggleMenu: function() {
       this.menuToggle.toggleClass('active');
       this.mobileNav.toggleClass('active');
@@ -77,6 +87,48 @@
       this.menuToggle.removeClass('active');
       this.mobileNav.removeClass('active');
       this.body.removeClass('menu-open');
+    }
+  };
+
+  // ==========================================================================
+  // 1.1 Desktop Dropdown Menu
+  // ==========================================================================
+
+  const DropdownMenu = {
+    init: function() {
+      this.dropdownItems = $('.header__nav-item--dropdown');
+
+      if (this.dropdownItems.length) {
+        this.bindEvents();
+      }
+    },
+
+    bindEvents: function() {
+      // Desktop: hover to show dropdown (CSS handles this, but we add touch support)
+      this.dropdownItems.on('touchstart', function(e) {
+        const $this = $(this);
+
+        // If already showing, let the link work
+        if ($this.hasClass('dropdown-open')) {
+          return;
+        }
+
+        // Prevent link navigation on first tap
+        e.preventDefault();
+
+        // Close other dropdowns
+        $('.header__nav-item--dropdown').not($this).removeClass('dropdown-open');
+
+        // Toggle this dropdown
+        $this.toggleClass('dropdown-open');
+      });
+
+      // Close dropdowns when clicking outside
+      $(document).on('touchstart click', function(e) {
+        if (!$(e.target).closest('.header__nav-item--dropdown').length) {
+          $('.header__nav-item--dropdown').removeClass('dropdown-open');
+        }
+      });
     }
   };
 
@@ -551,6 +603,7 @@
   $(document).ready(function() {
     // Initialize all modules
     MobileMenu.init();
+    DropdownMenu.init();
     HeroSlider.init();
     SmoothScroll.init();
     ScrollAnimations.init();
@@ -579,6 +632,8 @@
   window.HospitalSite = {
     smoothScroll: SmoothScroll,
     scrollAnimations: ScrollAnimations,
+    dropdownMenu: DropdownMenu,
+    mobileMenu: MobileMenu,
     utils: Utils,
     config: CONFIG
   };

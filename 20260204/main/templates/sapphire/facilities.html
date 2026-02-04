@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="viewport" content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+
+  <title>시설안내 | 포오프병원</title>
+  <meta name="description" content="포오프병원의 최첨단 의료 시설을 소개합니다. 수술센터, 재활센터, 영상의학센터.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header header--scrolled" id="doz_header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="포오프병원" class="logo-img">
+        </a>
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav-item header__nav-item--dropdown">
+          <a href="about.html" class="header__nav-link active">병원소개 <span class="dropdown-arrow">▾</span></a>
+          <div class="header__dropdown">
+            <a href="about.html" class="header__dropdown-link">병원소개</a>
+            <a href="doctors.html" class="header__dropdown-link">의료진</a>
+            <a href="facilities.html" class="header__dropdown-link">시설안내</a>
+          </div>
+        </div>
+        <div class="header__nav-item">
+          <a href="joint.html" class="header__nav-link">관절센터</a>
+        </div>
+        <div class="header__nav-item">
+          <a href="spine.html" class="header__nav-link">척추센터</a>
+        </div>
+        <div class="header__nav-item">
+          <a href="sports.html" class="header__nav-link">스포츠 재활센터</a>
+        </div>
+      </nav>
+      <button class="header__menu-toggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item mobile-nav__item--accordion">
+        <button class="mobile-nav__accordion-toggle">
+          병원소개 <span class="accordion-arrow">▾</span>
+        </button>
+        <ul class="mobile-nav__submenu">
+          <li><a href="about.html" class="mobile-nav__sublink">병원소개</a></li>
+          <li><a href="doctors.html" class="mobile-nav__sublink">의료진</a></li>
+          <li><a href="facilities.html" class="mobile-nav__sublink">시설안내</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="joint.html" class="mobile-nav__link">관절센터</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="spine.html" class="mobile-nav__link">척추센터</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="sports.html" class="mobile-nav__link">스포츠 재활센터</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb">
+        <span class="breadcrumb__item"><a href="index.html">홈</a></span>
+        <span class="breadcrumb__separator">›</span>
+        <span class="breadcrumb__item"><a href="about.html">병원소개</a></span>
+        <span class="breadcrumb__separator">›</span>
+        <span class="breadcrumb__item breadcrumb__item--active">시설안내</span>
+      </nav>
+      <div class="page-hero__content">
+        <h1 class="page-hero__title">시설안내</h1>
+        <p class="page-hero__subtitle">최첨단 의료 시설과 편안한 환경</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Content -->
+  <section class="subpage-content">
+    <div class="container">
+      <div class="subpage-content__intro">
+        <h2>포오프병원 시설</h2>
+        <p>환자분들께 최상의 의료 서비스를 제공하기 위해 최첨단 의료 장비와 쾌적한 환경을 갖추고 있습니다.</p>
+      </div>
+
+      <div class="content-grid content-grid--3col">
+        <!-- Surgery Center -->
+        <div class="facility-detail-card fade-in">
+          <img src="assets/facility-surgery.png" alt="수술센터" class="facility-detail-card__image">
+          <div class="facility-detail-card__overlay"></div>
+          <div class="facility-detail-card__content">
+            <h3 class="facility-detail-card__title">수술센터</h3>
+            <p class="facility-detail-card__desc">최첨단 장비를 갖춘 무균 수술실에서 안전하고 정확한 수술을 시행합니다. 관절경, 인공관절, 척추 수술 등 다양한 수술이 가능합니다.</p>
+          </div>
+        </div>
+
+        <!-- Rehab Center -->
+        <div class="facility-detail-card fade-in" data-delay="100">
+          <img src="assets/facility-rehab.png" alt="재활센터" class="facility-detail-card__image">
+          <div class="facility-detail-card__overlay"></div>
+          <div class="facility-detail-card__content">
+            <h3 class="facility-detail-card__title">재활센터</h3>
+            <p class="facility-detail-card__desc">전문 재활 장비와 경험 풍부한 치료사가 1:1 맞춤 재활 치료를 제공합니다. 수술 후 재활부터 스포츠 재활까지 체계적인 프로그램을 운영합니다.</p>
+          </div>
+        </div>
+
+        <!-- Imaging Center -->
+        <div class="facility-detail-card fade-in" data-delay="200">
+          <img src="assets/facility-imaging.png" alt="영상의학센터" class="facility-detail-card__image">
+          <div class="facility-detail-card__overlay"></div>
+          <div class="facility-detail-card__content">
+            <h3 class="facility-detail-card__title">영상의학센터</h3>
+            <p class="facility-detail-card__desc">MRI, CT 등 정밀 진단 장비를 갖추고 있어 정확한 진단이 가능합니다. 당일 검사 및 빠른 결과 확인이 가능합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipment Section -->
+  <section class="section-block section-block--gray">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Equipment</p>
+        <h2 class="section-header__title">주요 의료 장비</h2>
+      </div>
+      <div class="treatment-grid">
+        <div class="treatment-item fade-in">
+          <div class="treatment-item__icon">
+            <img src="assets/icon-spine.png" alt="MRI">
+          </div>
+          <div class="treatment-item__content">
+            <h4>MRI (자기공명영상)</h4>
+            <p>근육, 인대, 연골 등 연부조직을 정밀하게 진단할 수 있는 첨단 영상 장비</p>
+          </div>
+        </div>
+        <div class="treatment-item fade-in" data-delay="100">
+          <div class="treatment-item__icon">
+            <img src="assets/icon-knee.png" alt="CT">
+          </div>
+          <div class="treatment-item__content">
+            <h4>CT (컴퓨터단층촬영)</h4>
+            <p>뼈와 관절의 구조를 3D로 확인할 수 있는 정밀 진단 장비</p>
+          </div>
+        </div>
+        <div class="treatment-item fade-in" data-delay="200">
+          <div class="treatment-item__icon">
+            <img src="assets/icon-shoulder.png" alt="관절경">
+          </div>
+          <div class="treatment-item__content">
+            <h4>관절경 수술 장비</h4>
+            <p>최소 절개로 관절 내부를 직접 확인하며 수술하는 첨단 수술 장비</p>
+          </div>
+        </div>
+        <div class="treatment-item fade-in" data-delay="300">
+          <div class="treatment-item__icon">
+            <img src="assets/icon-spine.png" alt="C-arm">
+          </div>
+          <div class="treatment-item__content">
+            <h4>C-arm (이동형 엑스레이)</h4>
+            <p>수술 중 실시간 영상을 확인하며 정확한 시술이 가능한 장비</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comfort Section -->
+  <section class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__subtitle">Comfort</p>
+        <h2 class="section-header__title">편안한 환경</h2>
+        <p class="section-header__desc">환자분들의 편안한 진료와 회복을 위해 쾌적한 환경을 제공합니다</p>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <div class="fade-in">
+            <img src="assets/intro-waiting.png" alt="대기실" class="rounded shadow w-100">
+          </div>
+        </div>
+        <div class="col col-6">
+          <div class="fade-in" data-delay="200">
+            <h3>환자 중심 공간 설계</h3>
+            <p>포오프병원은 환자분들이 편안하게 진료받으실 수 있도록 쾌적한 환경을 갖추고 있습니다.</p>
+            <ul class="feature-list">
+              <li class="feature-list__item">
+                <div class="feature-list__content">
+                  <h4>넓고 쾌적한 대기 공간</h4>
+                  <p>여유로운 대기 공간에서 편안하게 진료를 기다리실 수 있습니다.</p>
+                </div>
+              </li>
+              <li class="feature-list__item">
+                <div class="feature-list__content">
+                  <h4>프라이버시 보호</h4>
+                  <p>개인 진료실에서 상담과 진료가 이루어집니다.</p>
+                </div>
+              </li>
+              <li class="feature-list__item">
+                <div class="feature-list__content">
+                  <h4>편리한 주차 시설</h4>
+                  <p>건물 내 주차장을 무료로 이용하실 수 있습니다.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid footer__grid--3col">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <img src="assets/logo-white.png" alt="포오프병원">
+          </div>
+          <p class="footer__desc">
+            포오프병원은 관절·척추 전문 병원으로<br>환자 중심의 진료를 실천합니다.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+              <img src="assets/icon-instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+              <img src="assets/icon-youtube.png" alt="YouTube">
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5 class="footer__title">진료센터</h5>
+          <ul class="footer__list">
+            <li><a href="joint.html">관절센터</a></li>
+            <li><a href="spine.html">척추센터</a></li>
+            <li><a href="sports.html">스포츠 재활센터</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5 class="footer__title">연락처</h5>
+          <div class="footer__contact-item">
+            <span>전화: 02-1234-5678</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>팩스: 02-1234-5679</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>이메일: info@fouroffosc.com</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>서울시 강남구 개포로26길 16</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2025 포오프병원. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="main.js"></script>
+</body>
+</html>
