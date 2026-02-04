@@ -1,0 +1,154 @@
+=== new_subpage_병원소개.html ===
+
+[Reuse from existing assets]
+- sapphire_logo_1_200x60.png : Header logo
+- sapphire_logowhite_1_200x60.png : Footer logo (white version)
+- sapphire_instagram_1_48x48.png : Instagram social icon
+- sapphire_youtube_1_48x48.png : YouTube social icon
+
+[Needs to be created]
+- sapphire_about_hero_1_1920x400.png : About page hero background (hospital exterior/interior panorama)
+- sapphire_about_interior_1_800x600.png : Hospital interior photo for intro section
+- sapphire_doctor_1_400x500.png : Doctor photo - 곽규완 원장
+- sapphire_doctor_2_400x500.png : Doctor photo - 김민경 원장
+- sapphire_about_gallery_1_600x400.png : Gallery image - 진료실
+- sapphire_about_gallery_2_600x400.png : Gallery image - 물리치료실
+- sapphire_about_gallery_3_600x400.png : Gallery image - 재활센터
+
+
+=== new_subpage_관절센터.html ===
+
+[Reuse from existing assets]
+- sapphire_logo_1_200x60.png : Header logo
+- sapphire_logowhite_1_200x60.png : Footer logo (white version)
+- sapphire_instagram_1_48x48.png : Instagram social icon
+- sapphire_youtube_1_48x48.png : YouTube social icon
+- sapphire_knee_1_400x400.png : Knee icon (if used on main page)
+- sapphire_shoulder_1_400x400.png : Shoulder icon (if used on main page)
+
+[Needs to be created]
+- sapphire_joint_hero_1_1920x400.png : Joint Center hero background (joint/knee imagery)
+- sapphire_joint_intro_1_800x600.png : Joint Center intro section image
+- sapphire_joint_acl_1_400x400.png : ACL injury icon (십자인대 손상)
+- sapphire_joint_arthritis_1_400x400.png : Osteoarthritis icon (퇴행성 관절염)
+- sapphire_shoulder_frozen_1_400x400.png : Frozen shoulder icon (오십견)
+- sapphire_shoulder_impingement_1_400x400.png : Impingement syndrome icon (충돌증후군)
+- sapphire_shoulder_calcific_1_400x400.png : Calcific tendinitis icon (석회성 건염)
+- sapphire_treatment_injection_1_600x400.png : Injection treatment image (주사치료)
+- sapphire_treatment_physical_1_600x400.png : Physical therapy image (물리치료)
+- sapphire_treatment_surgery_1_600x400.png : Surgery treatment image (수술치료)
+
+
+=== new_subpage_척추센터.html ===
+
+[Reuse from existing assets]
+- sapphire_logo_1_200x60.png : Header logo
+- sapphire_logowhite_1_200x60.png : Footer logo (white version)
+- sapphire_instagram_1_48x48.png : Instagram social icon
+- sapphire_youtube_1_48x48.png : YouTube social icon
+- sapphire_spine_1_400x400.png : Spine icon (if used on main page)
+- sapphire_treatment_injection_1_600x400.png : Injection treatment image (reuse from joint center)
+- sapphire_treatment_physical_1_600x400.png : Physical therapy image (reuse from joint center)
+
+[Needs to be created]
+- sapphire_spine_hero_1_1920x400.png : Spine Center hero background (spine imagery)
+- sapphire_spine_intro_1_800x600.png : Spine Center intro section image
+- sapphire_spine_turtle_1_400x400.png : Turtle neck syndrome icon (거북목 증후군)
+- sapphire_spine_disc_1_400x400.png : Lumbar disc herniation icon (허리디스크)
+- sapphire_spine_stenosis_1_400x400.png : Spinal stenosis icon (척추관 협착증)
+- sapphire_spine_pain_1_400x400.png : Lower back pain icon (요통)
+- sapphire_treatment_manual_1_600x400.png : Manual therapy image (도수치료)
+- sapphire_treatment_exercise_1_600x400.png : Exercise therapy image (운동치료)
+
+
+=== new_subpage_스포츠재활센터.html ===
+
+[Reuse from existing assets]
+- sapphire_logo_1_200x60.png : Header logo
+- sapphire_logowhite_1_200x60.png : Footer logo (white version)
+- sapphire_instagram_1_48x48.png : Instagram social icon
+- sapphire_youtube_1_48x48.png : YouTube social icon
+- sapphire_treatment_manual_1_600x400.png : Manual therapy image (reuse from spine center)
+- sapphire_treatment_exercise_1_600x400.png : Exercise therapy image (reuse from spine center)
+- sapphire_treatment_physical_1_600x400.png : Physical therapy image (reuse from joint center)
+
+[Needs to be created]
+- sapphire_sports_hero_1_1920x400.png : Sports Rehab Center hero background (sports/rehab imagery)
+- sapphire_sports_intro_1_800x600.png : Sports Rehab Center intro section image
+- sapphire_sports_injury_1_400x400.png : Sports injury rehabilitation icon (스포츠 부상 재활)
+- sapphire_sports_post_surgery_1_400x400.png : Post-surgery rehabilitation icon (수술 후 재활)
+- sapphire_sports_prevention_1_400x400.png : Injury prevention program icon (부상 예방)
+- sapphire_therapist_1_300x300.png : Therapist photo - 이준행
+- sapphire_therapist_2_300x300.png : Therapist photo - 김솔비
+- sapphire_therapist_3_300x300.png : Therapist photo - 손진우
+- sapphire_therapist_4_300x300.png : Therapist photo - 하연주
+- sapphire_therapist_5_300x300.png : Therapist photo - 박유진
+- sapphire_therapist_6_300x300.png : Therapist photo - 남창섭
+- sapphire_therapist_7_300x300.png : Therapist photo - 이진수
+
+
+=== Summary ===
+
+Total images needed for all subpages:
+
+[Reuse from existing] (8 unique files)
+- sapphire_logo_1_200x60.png
+- sapphire_logowhite_1_200x60.png
+- sapphire_instagram_1_48x48.png
+- sapphire_youtube_1_48x48.png
+- sapphire_knee_1_400x400.png (if exists)
+- sapphire_shoulder_1_400x400.png (if exists)
+- sapphire_spine_1_400x400.png (if exists)
+
+[Needs to be created] (40 unique files)
+
+Hero backgrounds (4):
+- sapphire_about_hero_1_1920x400.png
+- sapphire_joint_hero_1_1920x400.png
+- sapphire_spine_hero_1_1920x400.png
+- sapphire_sports_hero_1_1920x400.png
+
+Intro images (4):
+- sapphire_about_interior_1_800x600.png
+- sapphire_joint_intro_1_800x600.png
+- sapphire_spine_intro_1_800x600.png
+- sapphire_sports_intro_1_800x600.png
+
+Doctor photos (2):
+- sapphire_doctor_1_400x500.png
+- sapphire_doctor_2_400x500.png
+
+Therapist photos (7):
+- sapphire_therapist_1_300x300.png
+- sapphire_therapist_2_300x300.png
+- sapphire_therapist_3_300x300.png
+- sapphire_therapist_4_300x300.png
+- sapphire_therapist_5_300x300.png
+- sapphire_therapist_6_300x300.png
+- sapphire_therapist_7_300x300.png
+
+Gallery images (3):
+- sapphire_about_gallery_1_600x400.png
+- sapphire_about_gallery_2_600x400.png
+- sapphire_about_gallery_3_600x400.png
+
+Disease/condition icons (11):
+- sapphire_joint_acl_1_400x400.png
+- sapphire_joint_arthritis_1_400x400.png
+- sapphire_shoulder_frozen_1_400x400.png
+- sapphire_shoulder_impingement_1_400x400.png
+- sapphire_shoulder_calcific_1_400x400.png
+- sapphire_spine_turtle_1_400x400.png
+- sapphire_spine_disc_1_400x400.png
+- sapphire_spine_stenosis_1_400x400.png
+- sapphire_spine_pain_1_400x400.png
+- sapphire_sports_injury_1_400x400.png
+- sapphire_sports_post_surgery_1_400x400.png
+- sapphire_sports_prevention_1_400x400.png
+
+Treatment images (5):
+- sapphire_treatment_injection_1_600x400.png
+- sapphire_treatment_physical_1_600x400.png
+- sapphire_treatment_surgery_1_600x400.png
+- sapphire_treatment_manual_1_600x400.png
+- sapphire_treatment_exercise_1_600x400.png
