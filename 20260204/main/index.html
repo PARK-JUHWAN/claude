@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mogle — 수백만원 하던 병원 홈페이지, 이젠 모글</title>
+<meta name="description" content="수백만원 하던 병원 홈페이지, 이젠 모글에서 무료로 시작하세요. 템플릿을 골라 바로 완성.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.moglekorea.com/">
+<meta property="og:title" content="Mogle — 수백만원 하던 병원 홈페이지, 이젠 모글">
+<meta property="og:description" content="수백만원 하던 병원 홈페이지. 이젠, 모글에서 무료.">
+<meta property="og:image" content="https://www.moglekorea.com/og.png">
+<meta name="naver-site-verification" content="b7b796849ed99aaa47adb91b8c0df4d8d73ac79a">
+<meta name="google-site-verification" content="jdUNQbrSiasWwoI3jhJ6RmK93sg07TQFsOZomTz07RE" />  
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.png">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans KR',sans-serif;background:#fff;color:#202124}
+a{text-decoration:none;color:inherit}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
+.topbar a{color:#5f6368;font-size:14px}
+.topbar a:hover{color:#1a73e8}
+.hamburger{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:#5f6368}
+.mm{display:none;text-align:center;padding:12px;border-bottom:1px solid #e0e0e0}
+.mm.open{display:block}
+.mm a{display:block;padding:8px;color:#5f6368;font-size:14px}
+.hero{display:flex;flex-direction:column;align-items:center;padding:80px 24px 40px}
+.logo{font-size:clamp(2.5rem,6vw,4rem);font-weight:700}
+.slogan{font-size:clamp(0.9rem,2vw,1.2rem);color:#5f6368;margin-top:16px;height:1.5em;transition:opacity 0.5s}
+.tabs{display:flex;gap:8px;margin-top:36px}
+.tab{padding:8px 24px;border:1px solid #e0e0e0;border-radius:24px;background:none;cursor:pointer;font-size:14px;font-family:inherit;color:#5f6368;transition:all 0.2s}
+.tab.active{background:#202124;color:#fff;border-color:#202124}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin-top:36px;max-width:960px;width:100%;padding:0 24px}
+.card{position:relative;width:280px;aspect-ratio:16/10;background:#f1f3f4;border-radius:12px;overflow:hidden;cursor:pointer;display:block}
+.card-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.55);display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;transition:opacity 0.3s}
+.card:hover .card-overlay{opacity:1}
+.card.touched .card-overlay{opacity:1}
+.card-overlay h3{color:#fff;font-size:1.2rem;font-weight:700}
+.card-overlay p{color:rgba(255,255,255,0.8);font-size:0.85rem;margin-top:6px}
+.upload{border:2px dashed #dfe1e5;background:#fafafa;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.upload .plus{font-size:2.5rem;color:#5f6368;line-height:1}
+.upload .label{color:#5f6368;font-size:0.85rem;margin-top:8px}
+footer{text-align:center;padding:40px 24px;border-top:1px solid #e0e0e0;margin-top:60px}
+footer p{color:#5f6368;font-size:13px}
+@media(max-width:599px){
+.topbar .dl{display:none}
+.hamburger{display:block}
+.card{width:100%}
+.hero{padding:40px 24px 30px}
+}
+@media(min-width:600px) and (max-width:1023px){
+.card{width:calc(50% - 12px)}
+}
+</style>
+</head>
+<body>
+<nav class="topbar">
+<button class="hamburger" onclick="document.getElementById('mm').classList.toggle('open')">☰</button>
+<a href="#" class="dl">커뮤니티</a>
+<a href="#">로그인</a>
+</nav>
+<div class="mm" id="mm"><a href="#">커뮤니티</a></div>
+<main class="hero">
+<h1 class="logo">Mogle</h1>
+<div class="slogan" id="sl"></div>
+<div class="tabs">
+<button class="tab active" data-tab="o" onclick="sw('o')">오리지널</button>
+<button class="tab" data-tab="c" onclick="sw('c')">커스텀</button>
+</div>
+<div class="cards" id="cd"></div>
+</main>
+<footer><p>© 2026 Mogle · 문의: 카카오톡 오픈채팅</p></footer>
+<script>
+var S=['수백만원 하던 병원 홈페이지.','이젠, 모글에서 무료.'],
+P=[{n:'Sapphire',d:'추천: 정형외과, 외과',u:'/templates/sapphire/'},{n:'Opal',d:'추천: 내과, 가정의학과',u:'#'},{n:'Ruby',d:'추천: 치과',u:'#'}],
+i=0,t='o',sl=document.getElementById('sl'),cd=document.getElementById('cd');
+sl.textContent=S[0];sl.style.opacity=1;
+setInterval(function(){sl.style.opacity=0;setTimeout(function(){i=(i+1)%S.length;sl.textContent=S[i];sl.style.opacity=1},500)},3000);
+function sw(v){t=v;document.querySelectorAll('.tab').forEach(function(b){b.classList.toggle('active',b.dataset.tab===v)});r()}
+function r(){
+if(t==='o'){cd.innerHTML=P.map(function(p){return'<a href="'+p.u+'" class="card"><div class="card-overlay"><h3>'+p.n+'</h3><p>'+p.d+'</p></div></a>'}).join('')}
+else{cd.innerHTML='<a href="#" class="card upload"><span class="plus">+</span><span class="label">템플릿 올리기</span></a>'}
+}r();
+document.addEventListener('click',function(e){
+if(window.innerWidth>599)return;
+var c=e.target.closest('.card:not(.upload)');
+if(!c){document.querySelectorAll('.card.touched').forEach(function(x){x.classList.remove('touched')});return}
+if(c.classList.contains('touched'))return;
+e.preventDefault();document.querySelectorAll('.card.touched').forEach(function(x){x.classList.remove('touched')});c.classList.add('touched')});
+</script>
+</body>
+</html>
