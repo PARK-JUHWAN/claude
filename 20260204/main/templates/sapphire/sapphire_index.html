@@ -68,27 +68,26 @@
     <div class="header__inner">
       <div class="header__logo">
         <a href="/">
-          <img src="assets/logo.png" alt="{{hospital_name}}" class="logo-img">
+          <img src="sapphire_assets/sapphire_logo_1_200x60.png" alt="{{hospital_name}}" class="logo-img">
         </a>
       </div>
       <nav class="header__nav">
-        <div class="header__nav-item">
-          <a href="#intro" class="header__nav-link">{{nav_1_name}}</a>
+        <div class="header__nav-item header__nav-item--dropdown">
+          <a href="#intro" class="header__nav-link">병원소개 <span class="dropdown-arrow">▾</span></a>
+          <ul class="header__dropdown">
+            <li><a href="#intro">병원소개</a></li>
+            <li><a href="#doctors">의료진</a></li>
+            <li><a href="#facilities">시설안내</a></li>
+          </ul>
         </div>
         <div class="header__nav-item">
-          <a href="#departments" class="header__nav-link">{{nav_2_name}}</a>
+          <a href="#departments" class="header__nav-link">관절센터</a>
         </div>
         <div class="header__nav-item">
-          <a href="#departments" class="header__nav-link">{{nav_3_name}}</a>
+          <a href="#departments" class="header__nav-link">척추센터</a>
         </div>
         <div class="header__nav-item">
-          <a href="#departments" class="header__nav-link">{{nav_4_name}}</a>
-        </div>
-        <div class="header__nav-item">
-          <a href="#departments" class="header__nav-link">{{nav_5_name}}</a>
-        </div>
-        <div class="header__nav-item">
-          <a href="#departments" class="header__nav-link">{{nav_6_name}}</a>
+          <a href="#departments" class="header__nav-link">스포츠 재활센터</a>
         </div>
       </nav>
       <button class="header__menu-toggle" aria-label="메뉴 열기">
@@ -102,23 +101,22 @@
   <!-- Mobile Navigation -->
   <nav class="mobile-nav">
     <ul class="mobile-nav__list">
-      <li class="mobile-nav__item">
-        <a href="#intro" class="mobile-nav__link">{{nav_1_name}}</a>
+      <li class="mobile-nav__item mobile-nav__item--accordion">
+        <a href="#" class="mobile-nav__link mobile-nav__accordion-toggle">병원소개 <span class="accordion-arrow">▾</span></a>
+        <ul class="mobile-nav__submenu">
+          <li><a href="#intro" class="mobile-nav__sublink">병원소개</a></li>
+          <li><a href="#doctors" class="mobile-nav__sublink">의료진</a></li>
+          <li><a href="#facilities" class="mobile-nav__sublink">시설안내</a></li>
+        </ul>
       </li>
       <li class="mobile-nav__item">
-        <a href="#departments" class="mobile-nav__link">{{nav_2_name}}</a>
+        <a href="#departments" class="mobile-nav__link">관절센터</a>
       </li>
       <li class="mobile-nav__item">
-        <a href="#departments" class="mobile-nav__link">{{nav_3_name}}</a>
+        <a href="#departments" class="mobile-nav__link">척추센터</a>
       </li>
       <li class="mobile-nav__item">
-        <a href="#departments" class="mobile-nav__link">{{nav_4_name}}</a>
-      </li>
-      <li class="mobile-nav__item">
-        <a href="#departments" class="mobile-nav__link">{{nav_5_name}}</a>
-      </li>
-      <li class="mobile-nav__item">
-        <a href="#departments" class="mobile-nav__link">{{nav_6_name}}</a>
+        <a href="#departments" class="mobile-nav__link">스포츠 재활센터</a>
       </li>
     </ul>
   </nav>
@@ -127,7 +125,7 @@
   <section class="hero">
     <div class="hero__slider owl-carousel">
       <!-- Slide 1 -->
-      <div class="hero__slide" style="background-image: url('assets/hero-slide-1.png');">
+      <div class="hero__slide" style="background-image: url('sapphire_assets/sapphire_hero_1_1920x800.png');">
         <div class="hero__content">
           <h1 class="hero__title">{{hero_1_title}}</h1>
           <p class="hero__subtitle">{{hero_1_subtitle}}</p>
@@ -135,7 +133,7 @@
         </div>
       </div>
       <!-- Slide 2 -->
-      <div class="hero__slide" style="background-image: url('assets/hero-slide-2.png');">
+      <div class="hero__slide" style="background-image: url('sapphire_assets/sapphire_hero_2_1920x800.png');">
         <div class="hero__content">
           <h1 class="hero__title">{{hero_2_title}}</h1>
           <p class="hero__subtitle">{{hero_2_subtitle}}</p>
@@ -143,7 +141,7 @@
         </div>
       </div>
       <!-- Slide 3 -->
-      <div class="hero__slide" style="background-image: url('assets/hero-slide-3.png');">
+      <div class="hero__slide" style="background-image: url('sapphire_assets/sapphire_hero_3_1920x800.png');">
         <div class="hero__content">
           <h1 class="hero__title">{{hero_3_title}}</h1>
           <p class="hero__subtitle">{{hero_3_subtitle}}</p>
@@ -164,7 +162,7 @@
       <div class="row">
         <div class="col col-6">
           <div class="fade-in">
-            <img src="assets/hospital-intro.png" alt="{{hospital_name}} 소개" class="rounded shadow">
+            <img src="sapphire_assets/sapphire_hospital_1_800x600.png" alt="{{hospital_name}} 소개" class="rounded shadow">
           </div>
         </div>
         <div class="col col-6">
@@ -191,7 +189,7 @@
         <div class="col col-3">
           <a href="#" class="department-card fade-in">
             <div class="department-card__icon">
-              <img src="assets/icon-knee.png" alt="{{dept_1_name}}">
+              <img src="sapphire_assets/sapphire_knee_1_400x400.png" alt="{{dept_1_name}}">
             </div>
             <h4 class="department-card__title">{{dept_1_name}}</h4>
             <p class="department-card__text">{{dept_1_desc}}</p>
@@ -200,7 +198,7 @@
         <div class="col col-3">
           <a href="#" class="department-card fade-in" data-delay="100">
             <div class="department-card__icon">
-              <img src="assets/icon-shoulder.png" alt="{{dept_2_name}}">
+              <img src="sapphire_assets/sapphire_shoulder_1_400x400.png" alt="{{dept_2_name}}">
             </div>
             <h4 class="department-card__title">{{dept_2_name}}</h4>
             <p class="department-card__text">{{dept_2_desc}}</p>
@@ -209,7 +207,7 @@
         <div class="col col-3">
           <a href="#" class="department-card fade-in" data-delay="200">
             <div class="department-card__icon">
-              <img src="assets/icon-spine.png" alt="{{dept_3_name}}">
+              <img src="sapphire_assets/sapphire_spine_1_400x400.png" alt="{{dept_3_name}}">
             </div>
             <h4 class="department-card__title">{{dept_3_name}}</h4>
             <p class="department-card__text">{{dept_3_desc}}</p>
@@ -218,7 +216,7 @@
         <div class="col col-3">
           <a href="#" class="department-card fade-in" data-delay="300">
             <div class="department-card__icon">
-              <img src="assets/icon-foot.png" alt="{{dept_4_name}}">
+              <img src="sapphire_assets/sapphire_foot_1_400x400.png" alt="{{dept_4_name}}">
             </div>
             <h4 class="department-card__title">{{dept_4_name}}</h4>
             <p class="department-card__text">{{dept_4_desc}}</p>
@@ -240,7 +238,7 @@
         <div class="col col-4">
           <div class="doctor-card fade-in">
             <div class="doctor-card__image">
-              <img src="assets/doctor-1.png" alt="{{doctor_1_name}}">
+              <img src="sapphire_assets/sapphire_doctor_1_400x500.png" alt="{{doctor_1_name}}">
             </div>
             <h4 class="doctor-card__name">{{doctor_1_name}}</h4>
             <p class="doctor-card__specialty">{{doctor_1_specialty}}</p>
@@ -250,7 +248,7 @@
         <div class="col col-4">
           <div class="doctor-card fade-in" data-delay="100">
             <div class="doctor-card__image">
-              <img src="assets/doctor-2.png" alt="{{doctor_2_name}}">
+              <img src="sapphire_assets/sapphire_doctor_2_400x500.png" alt="{{doctor_2_name}}">
             </div>
             <h4 class="doctor-card__name">{{doctor_2_name}}</h4>
             <p class="doctor-card__specialty">{{doctor_2_specialty}}</p>
@@ -260,7 +258,7 @@
         <div class="col col-4">
           <div class="doctor-card fade-in" data-delay="200">
             <div class="doctor-card__image">
-              <img src="assets/doctor-3.png" alt="{{doctor_3_name}}">
+              <img src="sapphire_assets/sapphire_doctor_3_400x500.png" alt="{{doctor_3_name}}">
             </div>
             <h4 class="doctor-card__name">{{doctor_3_name}}</h4>
             <p class="doctor-card__specialty">{{doctor_3_specialty}}</p>
@@ -282,7 +280,7 @@
       <div class="row">
         <div class="col col-4">
           <div class="facility-card fade-in">
-            <img src="assets/facility-surgery.png" alt="{{facility_1_name}}" class="facility-card__image">
+            <img src="sapphire_assets/sapphire_surgery_1_800x600.png" alt="{{facility_1_name}}" class="facility-card__image">
             <div class="facility-card__overlay"></div>
             <div class="facility-card__content">
               <h4 class="facility-card__title">{{facility_1_name}}</h4>
@@ -292,7 +290,7 @@
         </div>
         <div class="col col-4">
           <div class="facility-card fade-in" data-delay="100">
-            <img src="assets/facility-rehab.png" alt="{{facility_2_name}}" class="facility-card__image">
+            <img src="sapphire_assets/sapphire_rehab_1_800x600.png" alt="{{facility_2_name}}" class="facility-card__image">
             <div class="facility-card__overlay"></div>
             <div class="facility-card__content">
               <h4 class="facility-card__title">{{facility_2_name}}</h4>
@@ -302,7 +300,7 @@
         </div>
         <div class="col col-4">
           <div class="facility-card fade-in" data-delay="200">
-            <img src="assets/facility-imaging.png" alt="{{facility_3_name}}" class="facility-card__image">
+            <img src="sapphire_assets/sapphire_imaging_1_800x600.png" alt="{{facility_3_name}}" class="facility-card__image">
             <div class="facility-card__overlay"></div>
             <div class="facility-card__content">
               <h4 class="facility-card__title">{{facility_3_name}}</h4>
@@ -327,7 +325,7 @@
       <div class="location__info">
         <div class="location__info-item fade-in">
           <div class="location__info-icon">
-            <img src="assets/icon-location.png" alt="주소">
+            <img src="sapphire_assets/sapphire_location_1_64x64.png" alt="주소">
           </div>
           <div>
             <h5 class="location__info-title">주소</h5>
@@ -336,7 +334,7 @@
         </div>
         <div class="location__info-item fade-in" data-delay="100">
           <div class="location__info-icon">
-            <img src="assets/icon-phone.png" alt="전화">
+            <img src="sapphire_assets/sapphire_phone_1_64x64.png" alt="전화">
           </div>
           <div>
             <h5 class="location__info-title">전화번호</h5>
@@ -345,7 +343,7 @@
         </div>
         <div class="location__info-item fade-in" data-delay="200">
           <div class="location__info-icon">
-            <img src="assets/icon-clock.png" alt="진료시간">
+            <img src="sapphire_assets/sapphire_clock_1_64x64.png" alt="진료시간">
           </div>
           <div>
             <h5 class="location__info-title">진료시간</h5>
@@ -362,36 +360,26 @@
       <div class="footer__grid">
         <div class="footer__col">
           <div class="footer__logo">
-            <img src="assets/logo-white.png" alt="{{hospital_name}}">
+            <img src="sapphire_assets/sapphire_logowhite_1_200x60.png" alt="{{hospital_name}}">
           </div>
           <p class="footer__desc">
             {{footer_desc}}
           </p>
           <div class="footer__social">
             <a href="{{instagram_url}}" target="_blank" aria-label="Instagram">
-              <img src="assets/icon-instagram.png" alt="Instagram">
+              <img src="sapphire_assets/sapphire_instagram_1_48x48.png" alt="Instagram">
             </a>
             <a href="{{youtube_url}}" target="_blank" aria-label="YouTube">
-              <img src="assets/icon-youtube.png" alt="YouTube">
+              <img src="sapphire_assets/sapphire_youtube_1_48x48.png" alt="YouTube">
             </a>
           </div>
         </div>
         <div class="footer__col">
           <h5 class="footer__title">진료센터</h5>
           <ul class="footer__list">
-            <li><a href="#departments">{{nav_2_name}}</a></li>
-            <li><a href="#departments">{{nav_3_name}}</a></li>
-            <li><a href="#departments">{{nav_4_name}}</a></li>
-            <li><a href="#departments">{{nav_5_name}}</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h5 class="footer__title">병원안내</h5>
-          <ul class="footer__list">
-            <li><a href="#intro">병원소개</a></li>
-            <li><a href="#doctors">의료진</a></li>
-            <li><a href="#facilities">시설안내</a></li>
-            <li><a href="#location">오시는 길</a></li>
+            <li><a href="#departments">관절센터</a></li>
+            <li><a href="#departments">척추센터</a></li>
+            <li><a href="#departments">스포츠 재활센터</a></li>
           </ul>
         </div>
         <div class="footer__col">

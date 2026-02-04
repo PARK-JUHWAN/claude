@@ -406,6 +406,103 @@ main {
   color: var(--brand-color);
 }
 
+/* Desktop Dropdown Menu */
+.header__nav-item--dropdown {
+  position: relative;
+}
+
+.header__nav-item--dropdown .dropdown-arrow {
+  font-size: 12px;
+  margin-left: 4px;
+  transition: transform 0.3s;
+}
+
+.header__nav-item--dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.header__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 150px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  padding: 12px 0;
+  margin-top: 10px;
+}
+
+.header__nav-item--dropdown:hover .header__dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__dropdown::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+.header__dropdown li {
+  padding: 0;
+}
+
+.header__dropdown a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #1a1e24;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header__dropdown a:hover {
+  background-color: var(--brand-color-light);
+  color: var(--brand-color);
+}
+
+/* Mobile Accordion Menu */
+.mobile-nav__item--accordion .accordion-arrow {
+  font-size: 12px;
+  margin-left: 8px;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.mobile-nav__item--accordion.active .accordion-arrow {
+  transform: rotate(180deg);
+}
+
+.mobile-nav__submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: var(--bg-gray);
+}
+
+.mobile-nav__item--accordion.active .mobile-nav__submenu {
+  max-height: 200px;
+}
+
+.mobile-nav__sublink {
+  display: block;
+  padding: 12px 24px 12px 40px;
+  font-size: 16px;
+  color: var(--text-secondary);
+  transition: color 0.3s;
+}
+
+.mobile-nav__sublink:hover {
+  color: var(--brand-color);
+}
+
 /* --------------------------------------------------------------------------
    5.2 Hero Slider
    -------------------------------------------------------------------------- */
@@ -870,7 +967,7 @@ main {
 
 .footer__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-bottom: 40px;
 }

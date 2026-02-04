@@ -81,6 +81,47 @@
   };
 
   // ==========================================================================
+  // 1.5 Dropdown Menu (Desktop & Mobile)
+  // ==========================================================================
+
+  const DropdownMenu = {
+    init: function() {
+      this.desktopDropdowns = $('.header__nav-item--dropdown');
+      this.mobileAccordions = $('.mobile-nav__item--accordion');
+
+      this.bindEvents();
+    },
+
+    bindEvents: function() {
+      const self = this;
+
+      // Desktop: hover open/close (CSS handles this, but we add JS for better control)
+      this.desktopDropdowns.on('mouseenter', function() {
+        $(this).addClass('is-open');
+      }).on('mouseleave', function() {
+        $(this).removeClass('is-open');
+      });
+
+      // Mobile: tap to toggle accordion
+      this.mobileAccordions.find('.mobile-nav__accordion-toggle').on('click', function(e) {
+        e.preventDefault();
+        const parent = $(this).closest('.mobile-nav__item--accordion');
+
+        // Close other accordions
+        self.mobileAccordions.not(parent).removeClass('active');
+
+        // Toggle current accordion
+        parent.toggleClass('active');
+      });
+
+      // Close mobile menu when clicking a submenu link
+      this.mobileAccordions.find('.mobile-nav__sublink').on('click', function() {
+        MobileMenu.closeMenu();
+      });
+    }
+  };
+
+  // ==========================================================================
   // 2. Hero Slider (Owl Carousel)
   // ==========================================================================
 
@@ -551,6 +592,7 @@
   $(document).ready(function() {
     // Initialize all modules
     MobileMenu.init();
+    DropdownMenu.init();
     HeroSlider.init();
     SmoothScroll.init();
     ScrollAnimations.init();
