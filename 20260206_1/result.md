@@ -137,7 +137,20 @@
 - Hardcoded sapphire_assets paths remaining: 0
 - All {{image_xxx}} placeholders: 69 found
 - Korean text preserved: YES
-- Korean text integrity: NO - MISSING KOREAN TEXT
+- Korean text integrity: YES
+- Mojibake patterns detected: 0
+- Korean character count:
+  - new_sapphire_index.html: 182 characters (lower count expected - most text in {{template_variables}})
+  - new_sapphire_about.html: 596 characters
+  - new_sapphire_joint.html: 832 characters
+  - new_sapphire_spine.html: 778 characters
+  - new_sapphire_sports.html: 743 characters
+- Sample Korean words verified per file:
+  - index: 병원소개, 관절센터, 척추센터, 스포츠 재활센터, 진료센터, 의료진, 시설, 오시는 길
+  - about: 병원소개, 의료진, 시설안내, 진료실, 물리치료실, 층별 안내
+  - joint: 관절센터, 무릎 질환, 어깨 질환, 치료 방법, 주사치료, 재활치료, 수술치료
+  - spine: 척추센터, 거북목, 디스크, 협착증, 목 질환, 허리 질환
+  - sports: 스포츠 재활센터, 재활 프로그램, 치료사 소개, 스포츠 부상
 
 ## Output Files
 - `new_sapphire_config.json`
