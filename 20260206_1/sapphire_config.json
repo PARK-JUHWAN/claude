@@ -1,0 +1,75 @@
+﻿{
+  "hospital_name": "모글병원",
+  "theme_color": "#2563eb",
+  "site_url": "https://www.moglekorea.com/templates/sapphire/",
+  "copyright_year": "2025",
+
+  "meta_subtitle": "수술센터, 스포츠 재활 관절·척추 수술 전문",
+  "meta_description": "모글병원는 스포츠 재활, 족부 특화, 관절 및 척추 비수술·수술을 전문으로 합니다. 무릎, 어깨, 발목, 허리 등 다양한 질환을 전문적으로 치료합니다.",
+  "meta_keywords": "모글병원, 정형외과, 관절, 척추, 재활, 무릎, 어깨, 허리, 족부, 수술센터, 스포츠재활",
+
+  "phone": "02-1234-5678",
+  "fax": "02-1234-5679",
+  "email": "info@mogle.com",
+  "address": "서울시 강남구 개포로26길 16",
+  "address_full": "서울시 강남구 개포로26길 16 (강서동)",
+  "postal_code": "28378",
+  "hours": "평일 09:00 - 18:00 / 토요일 09:00 - 13:00",
+  "map_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.123456789!2d127.0!3d37.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z7Y-s7Jik7ZSE67OR7JuQ!5e0!3m2!1sko!2skr!4v1234567890",
+
+  "instagram_url": "https://www.instagram.com/",
+  "youtube_url": "https://www.youtube.com/",
+
+  "nav_1_name": "병원소개",
+  "nav_2_name": "관절센터",
+  "nav_3_name": "척추센터",
+  "nav_4_name": "족부센터",
+  "nav_5_name": "스포츠 재활센터",
+  "nav_6_name": "운동선수센터",
+
+  "hero_1_title": "관절·척추 전문<br>모글병원",
+  "hero_1_subtitle": "최첨단 의료 장비와 전문 의료진이 함께합니다",
+  "hero_1_btn": "병원소개 보기",
+  "hero_2_title": "스포츠 재활<br>전문 센터",
+  "hero_2_subtitle": "선수부터 일반인까지 맞춤형 재활 프로그램",
+  "hero_2_btn": "자세히 보기",
+  "hero_3_title": "족부 특화<br>클리닉",
+  "hero_3_subtitle": "발·발목 전문 진료와 수술",
+  "hero_3_btn": "족부센터 보기",
+
+  "intro_title": "모글병원을 소개합니다",
+  "intro_desc": "무릎, 어깨, 허리, 족부, 외상 골절, 수술, 인공관절, 관절경, 스포츠 손상 및 재활 전문 병원입니다.",
+  "intro_heading": "최고의 의료진과 첨단 장비",
+  "intro_text_1": "모글병원은 환자 중심의 진료 철학을 바탕으로 최고의 의료 서비스를 제공합니다. 풍부한 임상 경험을 갖춘 전문 의료진과 최첨단 의료 장비를 통해 정확한 진단과 효과적인 치료를 제공합니다.",
+  "intro_text_2": "관절, 척추, 족부 분야의 비수술 치료부터 수술까지 환자 상태에 맞는 최적의 치료 방법을 제안합니다.",
+
+  "dept_1_name": "무릎",
+  "dept_1_desc": "연골손상, 십자인대, 퇴행성관절염, 골절",
+  "dept_2_name": "어깨",
+  "dept_2_desc": "회전근개파열, 오십견, 충돌증후군",
+  "dept_3_name": "척추",
+  "dept_3_desc": "디스크, 협착증, 측만증, 요통",
+  "dept_4_name": "족부",
+  "dept_4_desc": "무지외반증, 족저근막염, 발목인대파열",
+
+  "doctor_1_name": "김모글 원장",
+  "doctor_1_specialty": "관절·무릎 전문",
+  "doctor_1_desc": "관절경 수술, 인공관절 치환술 전문",
+  "doctor_2_name": "이모글 원장",
+  "doctor_2_specialty": "척추 전문",
+  "doctor_2_desc": "척추 비수술 치료, 최소침습 수술",
+  "doctor_3_name": "박모글 원장",
+  "doctor_3_specialty": "족부·스포츠재활 전문",
+  "doctor_3_desc": "족부 수술, 스포츠 손상 재활",
+
+  "facility_1_name": "수술센터",
+  "facility_1_desc": "최첨단 장비를 갖춘 무균 수술실",
+  "facility_2_name": "재활센터",
+  "facility_2_desc": "전문 재활 장비와 1:1 맞춤 치료",
+  "facility_3_name": "영상의학센터",
+  "facility_3_desc": "MRI, CT 등 정밀 진단 장비",
+
+  "footer_desc": "모글병원은 관절·척추 전문 병원으로<br>환자 중심의 진료를 실천합니다."
+}
+
+
